@@ -18,6 +18,4 @@ include:
   - board: nice_nano_v2
     shield: berylline_right
   - board: nice_nano_v2
-    shield: berylline03_left
-  - board: nice_nano_v2
-    shield: berylline03_right
+    shield: settings_reset
