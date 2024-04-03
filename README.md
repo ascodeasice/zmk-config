@@ -5,5 +5,5 @@
 ## Keymap
 
 *Generated with [keymap-drawer](https://github.com/caksoylar/keymap-drawer)*
- 
+
 ![](images/keymap.svg)
