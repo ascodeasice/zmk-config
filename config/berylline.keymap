@@ -80,6 +80,13 @@
             hold-trigger-on-release;
             global-quick-tap;
         };
+
+        mouse_shortcut: mouse_shortcut {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MOUSE_SHORTCUT";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C)>, <&kp LC(X)>, <&kp LC(Z)>;
+        };
     };
 
     conditional_layers {
@@ -201,20 +208,20 @@
 
         default_layer {
             bindings = <
-&none             &kp W           &kp F             &kp P               &kp B            &kp J      &kp L               &kp U               &kp Y           &kp SEMI
-&mt LEFT_SHIFT A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G            &kp M      &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &mt LSHIFT O
-                  &mt LCTRL K     &mt LEFT_ALT C    &mt LEFT_WIN D                                  &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
-                                                    &kp LEFT_SHIFT      &kp BACKSPACE    &kp ENTER  &kp SPACE
+&none             &kp W           &kp F             &kp P               &kp B              &kp J      &kp L               &kp U               &kp Y           &kp SEMI
+&mt LEFT_SHIFT A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G              &kp M      &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &mt LSHIFT O
+                  &mt LCTRL K     &mt LEFT_ALT C    &mt LEFT_WIN D                                    &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
+                                                    &kp LEFT_SHIFT      &lt 1 BACKSPACE    &kp ENTER  &kp SPACE
             >;
         };
 
         nav_layer {
             label = "Nav";
             bindings = <
-&kp F1    &kp F2    &kp F3     &kp F4     &kp F5      &kp PG_UP  &kp ESC   &kp UARW   &kp TAB   &kp HOME
-&kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL  &kp UNDO    &kp PG_DN  &kp LARW  &kp ENTER  &kp RARW  &kp END
-          &kp CUT   &kp COPY   &kp PASTE                         &kp BSPC  &kp DARW   &kp DEL
-                               &trans     &trans      &trans     &trans
+&none       &kp LA(F4)               &mmv MOVE_UP     &kp LA(TAB)      &none     &none      &trans            &kp UP            &trans          &none
+&kp ESCAPE  &mmv MOVE_LEFT           &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans    &trans     &kp LEFT          &kp DOWN          &kp RIGHT       &mwh SCROLL_RIGHT
+            &mt LEFT_CONTROL DELETE  &mouse_shortcut  &kp CAPSLOCK                          &mwh SCROLL_LEFT  &mwh SCROLL_DOWN  &mwh SCROLL_UP
+                                                      &kp ENTER        &to 0     &mkp LCLK  &mkp RCLK
             >;
         };
 
@@ -243,7 +250,7 @@
 &trans        &bt BT_CLR_ALL  &bt BT_CLR    &trans        &trans          &trans      &kp K_PREV         &kp K_PLAY_PAUSE  &kp K_NEXT     &trans
 &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp K_MUTE  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP   &kp C_BRI_DEC  &kp C_BRI_INC
               &bt BT_PRV      &trans        &bt BT_NXT                                &trans             &trans            &trans
-                                            &to 0         &trans          &trans      &trans
+                                            &trans        &to 0           &trans      &trans
             >;
         };
     };
