@@ -40,7 +40,7 @@
 &sl { release-after-ms = <250>; };
 
 &mt {
-    tapping-term-ms = <400>;
+    tapping-term-ms = <800>;
 };
 
 / {
