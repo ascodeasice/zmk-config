@@ -80,13 +80,6 @@
             hold-trigger-on-release;
             global-quick-tap;
         };
-
-        mouse_shortcut: mouse_shortcut {
-            compatible = "zmk,behavior-tap-dance";
-            label = "MOUSE_SHORTCUT";
-            #binding-cells = <0>;
-            bindings = <&kp LC(C)>, <&kp LC(X)>, <&kp LC(Z)>;
-        };
     };
 
     conditional_layers {
@@ -218,10 +211,10 @@
         nav_layer {
             label = "Nav";
             bindings = <
-&none       &kp LA(F4)               &mmv MOVE_UP     &kp LA(TAB)      &none     &none      &trans            &kp UP            &trans          &none
-&kp ESCAPE  &mmv MOVE_LEFT           &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans    &trans     &kp LEFT          &kp DOWN          &kp RIGHT       &mwh SCROLL_RIGHT
-            &mt LEFT_CONTROL DELETE  &mouse_shortcut  &kp CAPSLOCK                          &mwh SCROLL_LEFT  &mwh SCROLL_DOWN  &mwh SCROLL_UP
-                                                      &kp ENTER        &to 0     &mkp LCLK  &mkp RCLK
+&none       &kp LA(F4)               &mmv MOVE_UP    &kp LA(TAB)      &none     &none      &trans            &kp UP            &trans          &none
+&kp ESCAPE  &mmv MOVE_LEFT           &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &trans     &kp LEFT          &kp DOWN          &kp RIGHT       &mwh SCROLL_RIGHT
+            &mt LEFT_CONTROL DELETE  &none           &kp CAPSLOCK                          &mwh SCROLL_LEFT  &mwh SCROLL_DOWN  &mwh SCROLL_UP
+                                                     &kp ENTER        &to 0     &mkp LCLK  &mkp RCLK
             >;
         };
 
@@ -247,10 +240,10 @@
 
         MEDIA_LAYER {
             bindings = <
-&trans        &bt BT_CLR_ALL  &bt BT_CLR    &trans        &trans          &trans      &kp K_PREV         &kp K_PLAY_PAUSE  &kp K_NEXT     &trans
-&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp K_MUTE  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP   &kp C_BRI_DEC  &kp C_BRI_INC
-              &bt BT_PRV      &trans        &bt BT_NXT                                &trans             &trans            &trans
-                                            &trans        &to 0           &trans      &trans
+&trans        &bt BT_CLR_ALL  &bt BT_CLR       &trans        &trans          &trans      &kp K_PREV         &kp K_PLAY_PAUSE  &kp K_NEXT     &trans
+&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4    &kp K_MUTE  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP   &kp C_BRI_DEC  &kp C_BRI_INC
+              &bt BT_PRV      &mt LC(V) LC(C)  &bt BT_NXT                                &trans             &trans            &trans
+                                               &trans        &to 0           &trans      &trans
             >;
         };
     };
