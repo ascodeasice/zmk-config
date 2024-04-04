@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 /* Layers */
@@ -195,10 +194,10 @@
 
         default_layer {
             bindings = <
-&bt BT_CLR_ALL    &kp W           &kp F                 &kp P               &kp B            &kp J      &kp L               &kp U               &kp Y           &kp SEMI
-&mt LEFT_SHIFT A  &mt LC(LWIN) R  &mt LC(LS(LSHIFT)) S  &mt LC(LEFT_ALT) T  &kp G            &kp M      &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &mt LSHIFT O
-                  &mt LCTRL K     &mt LEFT_ALT C        &mt LEFT_WIN D                                  &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
-                                                        &kp LEFT_SHIFT      &kp BACKSPACE    &kp ENTER  &kp SPACE
+&none             &kp W           &kp F             &kp P               &kp B            &kp J      &kp L               &kp U               &kp Y           &kp SEMI
+&mt LEFT_SHIFT A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G            &kp M      &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &mt LSHIFT O
+                  &mt LCTRL K     &mt LEFT_ALT C    &mt LEFT_WIN D                                  &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
+                                                    &kp LEFT_SHIFT      &kp BACKSPACE    &kp ENTER  &kp SPACE
             >;
         };
 
