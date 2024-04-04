@@ -212,8 +212,8 @@
             label = "Nav";
             bindings = <
 &none       &kp LA(F4)               &mmv MOVE_UP    &kp LA(TAB)      &none     &none      &trans            &kp UP            &trans          &none
-&kp ESCAPE  &mmv MOVE_LEFT           &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &trans     &kp LEFT          &kp DOWN          &kp RIGHT       &msc SCRL_UP
-            &mt LEFT_CONTROL DELETE  &none           &kp CAPSLOCK                          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT
+&kp ESCAPE  &mmv MOVE_LEFT           &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &trans     &kp LEFT          &kp DOWN          &kp RIGHT       &msc SCRL_RIGHT
+            &mt LEFT_CONTROL DELETE  &none           &kp CAPSLOCK                          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP
                                                      &kp ENTER        &to 0     &mkp LCLK  &mkp RCLK
             >;
         };
