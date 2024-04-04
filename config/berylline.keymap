@@ -192,6 +192,7 @@
         minus {
             bindings = <&kp MINUS>;
             key-positions = <23 24>;
+            layers = <0>;
         };
     };
 
