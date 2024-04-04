@@ -103,77 +103,34 @@
         /* Letters */
 
         v {
-            key-positions = <1 2>;
+            key-positions = <2 3>;
             bindings = <&kp V>;
             layers = <DEF_L>;
         };
 
         q {
-            key-positions = <2 3>;
+            key-positions = <12 11>;
             bindings = <&kp Q>;
             layers = <DEF_L>;
         };
 
         z {
-            key-positions = <20 21>;
+            key-positions = <2 13>;
             bindings = <&kp Z>;
             layers = <DEF_L>;
         };
 
         /* Brackets */
-
-        lbkt {
-            key-positions = <1 11>;
-            bindings = <&kp LBKT>;
-            layers = <DEF_L SYM_L NUM_L>;
-        };
-
-        rbkt {
-            key-positions = <8 18>;
-            bindings = <&kp RBKT>;
-            layers = <DEF_L SYM_L NUM_L>;
-        };
-
-        lpar {
-            key-positions = <2 12>;
-            bindings = <&kp LPAR>;
-            layers = <DEF_L SYM_L NUM_L>;
-        };
-
-        rpar {
-            key-positions = <7 17>;
-            bindings = <&kp RPAR>;
-            layers = <DEF_L SYM_L NUM_L>;
-        };
-
-        lbrc {
-            key-positions = <3 13>;
-            bindings = <&kp LBRC>;
-            layers = <DEF_L SYM_L NUM_L>;
-        };
-
-        rbrc {
-            key-positions = <6 16>;
-            bindings = <&kp RBRC>;
-            layers = <DEF_L SYM_L NUM_L>;
-        };
-
         /* Convenience */
 
-        del {
-            key-positions = <4 14>;
-            bindings = <&kp DEL>;
-        };
-
         esc {
-            key-positions = <5 15>;
             bindings = <&kp ESC>;
+            key-positions = <11 13>;
         };
 
-        slall {
-            key-positions = <20 21>;
-            bindings = <&kp SLALL>;
-            layers = <NAV_L>;
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <1 2>;
         };
     };
 
