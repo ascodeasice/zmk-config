@@ -132,6 +132,51 @@
             bindings = <&kp TAB>;
             key-positions = <1 2>;
         };
+
+        x {
+            bindings = <&kp X>;
+            key-positions = <12 22>;
+        };
+
+        zero {
+            bindings = <&kp N0>;
+            key-positions = <20 21>;
+        };
+
+        one {
+            bindings = <&kp N1>;
+            key-positions = <22 21>;
+        };
+
+        b {
+            bindings = <&kp B>;
+            key-positions = <12 13>;
+        };
+
+        j {
+            bindings = <&kp J>;
+            key-positions = <6 7>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <7 8>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <24 23 24>;
+        };
+
+        slash {
+            bindings = <&kp SLASH>;
+            key-positions = <24 25>;
+        };
+
+        semicolon {
+            bindings = <&kp SEMI>;
+            key-positions = <23 25>;
+        };
     };
 
     keymap {
