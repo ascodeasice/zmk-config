@@ -30,6 +30,13 @@
 #define KEYS_R 5 6 7 8 9 15 16 17 18 19 23 24 25  // right-hand keys
 #define THUMBS 26 27 28 29                        // thumb keys
 
+
+/* Mod Tap Parameters */
+
+#define TAPPING_TERM 300
+#define TD_TAPPING_TERM 325
+#define QUICK_TAP_TERM 175
+
 /* Behavior Settings */
 
 &sk {
@@ -40,7 +47,9 @@
 &sl { release-after-ms = <250>; };
 
 &mt {
-    tapping-term-ms = <800>;
+    tapping-term-ms = <TAPPING_TERM>;
+    flavor = "tap-preferred";
+    quick-tap-ms = <QUICK_TAP_TERM>;
 };
 
 / {
