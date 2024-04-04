@@ -194,6 +194,16 @@
             key-positions = <23 24>;
             layers = <0>;
         };
+
+        quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <17 19>;
+        };
+
+        to_nav {
+            bindings = <&to 1>;
+            key-positions = <20 21 22>;
+        };
     };
 
     keymap {
@@ -211,8 +221,8 @@
         nav_layer {
             label = "Nav";
             bindings = <
-&none       &kp LA(F4)               &mmv MOVE_UP    &kp LA(TAB)      &none     &none      &trans            &kp UP            &trans          &none
-&kp ESCAPE  &mmv MOVE_LEFT           &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &trans     &kp LEFT          &kp DOWN          &kp RIGHT       &msc SCRL_RIGHT
+&none       &kp LA(F4)               &mmv MOVE_UP    &kp LA(TAB)      &none     &none      &trans          &kp UP          &trans        &none
+&kp ESCAPE  &mmv MOVE_LEFT           &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &trans     &kp LEFT        &kp DOWN        &kp RIGHT     &msc SCRL_RIGHT
             &mt LEFT_CONTROL DELETE  &none           &kp CAPSLOCK                          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP
                                                      &kp ENTER        &to 0     &mkp LCLK  &mkp RCLK
             >;
