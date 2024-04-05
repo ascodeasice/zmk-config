@@ -258,10 +258,10 @@
 
         default_layer {
             bindings = <
-&none             &kp W           &kp F             &kp P               &trans             &trans       &kp L               &kp U               &kp Y           &trans
-&mt LEFT_SHIFT A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G              &kp M        &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &mt LSHIFT O
-                  &mt LCTRL K     &mt LEFT_ALT C    &mt LEFT_WIN D                                      &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
-                                                    &kp LEFT_SHIFT      &lt 1 BACKSPACE    &lt 2 ENTER  &lt 3 SPACE
+&none    &kp W           &kp F             &kp P               &trans             &trans       &kp L               &kp U               &kp Y           &trans
+&lt 5 A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G              &kp M        &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &mt LSHIFT O
+         &mt LCTRL K     &mt LEFT_ALT C    &mt LEFT_WIN D                                      &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
+                                           &kp LEFT_SHIFT      &lt 1 BACKSPACE    &lt 2 ENTER  &lt 3 SPACE
             >;
         };
 
@@ -301,6 +301,15 @@
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp K_MUTE  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP   &kp C_BRI_DEC  &kp C_BRI_INC
               &bt BT_PRV    &bootloader   &bt BT_NXT                                &trans             &bootloader       &bt BT_CLR
                                           &trans        &to 0           &trans      &trans
+            >;
+        };
+
+        shortcut_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans                    &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans
             >;
         };
     };
