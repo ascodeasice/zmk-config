@@ -80,6 +80,20 @@
             hold-trigger-on-release;
             global-quick-tap;
         };
+
+        f1to4: f1to4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "F1TO4";
+            #binding-cells = <0>;
+            bindings = <&kp F1>, <&kp F2>, <&kp F3>, <&kp F4>;
+        };
+
+        f5to8: f5to8 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "F5TO8";
+            #binding-cells = <0>;
+            bindings = <&kp F5>, <&kp F6>, <&kp F7>, <&kp F8>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -288,7 +302,7 @@
         num_layer {
             label = "Num";
             bindings = <
-&none         &none         &none          &none          &none     &none   &none          &none          &none         &none
+&none         &f1to4        &f5to8         &kp F9         &none     &none   &kp F10        &kp F11        &kp F12       &none
 &mtl LGUI N1  &mtl LALT N2  &mtl LSHFT N3  &mtl LCTRL N4  &kp N5    &kp N6  &mtr LCTRL N7  &mtr LSHFT N8  &mtr LALT N9  &mtr LGUI N0
               &none         &none          &none                            &none          &none          &none
                                            &trans         &trans    &trans  &trans
