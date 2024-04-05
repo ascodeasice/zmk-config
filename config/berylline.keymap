@@ -223,6 +223,11 @@
             key-positions = <8 18>;
             layers = <0>;
         };
+
+        two {
+            bindings = <&kp NUMBER_2>;
+            key-positions = <20 22>;
+        };
     };
 
     macros {
@@ -273,10 +278,10 @@
         sym_layer {
             label = "Sym";
             bindings = <
-&trans    &kp SEMI   &trans     &trans            &none        &kp CARET  &kp AMPS   &kp SEMI   &kp COLON  &kp QMARK
-&kp EXCL  &kp TILDE  &kp MINUS  &kp EQUAL         &kp ASTRK    &kp BSLH   &kp LCTRL  &kp LSHFT  &kp LALT   &kp LGUI
-          &kp AT     &kp HASH   &kp DOLLAR                                &kp PIPE   &kp LT     &kp GT
-                                &mt LSHIFT SPACE  &trans       &trans     &trans
+&trans    &kp SEMI   &kp ASTRK  &trans            &none          &none          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &none
+&kp EXCL  &kp TILDE  &kp MINUS  &kp EQUAL         &kp PERCENT    &kp BACKSPACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp SINGLE_QUOTE
+          &kp AT     &kp HASH   &kp DOLLAR                                      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET
+                                &mt LSHIFT SPACE  &kp ENTER      &trans         &trans
             >;
         };
 
