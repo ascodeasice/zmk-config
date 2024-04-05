@@ -211,14 +211,14 @@
             layers = <4>;
         };
 
-        g {
-            bindings = <&kp G>;
-            key-positions = <13 3>;
+        w {
+            bindings = <&kp W>;
+            key-positions = <16 17>;
         };
 
-        m {
+        k {
             bindings = <&kp M>;
-            key-positions = <6 16>;
+            key-positions = <19 18>;
         };
     };
 
