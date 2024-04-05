@@ -206,33 +206,45 @@
             layers = <4>;
         };
 
-        y {
-            bindings = <&kp Y>;
-            key-positions = <16 17>;
+        the {
+            bindings = <&the>;
+            key-positions = <6 16>;
             layers = <0>;
-            timeout-ms = <30>;
         };
 
-        k {
-            bindings = <&kp K>;
-            key-positions = <18 17>;
+        of {
+            bindings = <&of>;
+            key-positions = <7 17>;
             layers = <0>;
-            timeout-ms = <30>;
         };
 
-        key {
-            bindings = <&key>;
-            key-positions = <17 7>;
+        and {
+            bindings = <&and>;
+            key-positions = <8 18>;
             layers = <0>;
         };
     };
 
     macros {
-        key: key {
+        the: the {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp K &kp E &kp Y>;
-            label = "KEY";
+            bindings = <&kp T &kp H &kp E>;
+            label = "THE";
+        };
+
+        of: of {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp F>;
+            label = "OF";
+        };
+
+        and: and {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp N &kp D>;
+            label = "AND";
         };
     };
 
@@ -241,9 +253,9 @@
 
         default_layer {
             bindings = <
-&none             &kp W           &kp F             &kp P               &trans             &trans       &kp L               &kp U               &kp M           &trans
+&none             &kp W           &kp F             &kp P               &trans             &trans       &kp L               &kp U               &kp Y           &trans
 &mt LEFT_SHIFT A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G              &kp M        &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &mt LSHIFT O
-                  &mt LCTRL G     &mt LEFT_ALT C    &mt LEFT_WIN D                                      &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
+                  &mt LCTRL K     &mt LEFT_ALT C    &mt LEFT_WIN D                                      &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
                                                     &kp LEFT_SHIFT      &lt 1 BACKSPACE    &lt 2 ENTER  &lt 3 SPACE
             >;
         };
