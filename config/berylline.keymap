@@ -94,6 +94,16 @@
             #binding-cells = <0>;
             bindings = <&kp F5>, <&kp F6>, <&kp F7>, <&kp F8>;
         };
+
+        hold_repeat: hold_repeat {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_REPEAT";
+            bindings = <&lt>, <&key_repeat>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -241,6 +251,13 @@
         two {
             bindings = <&kp NUMBER_2>;
             key-positions = <20 22>;
+            layers = <0>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <16 18>;
+            layers = <0>;
         };
     };
 
@@ -272,10 +289,10 @@
 
         default_layer {
             bindings = <
-&none    &kp W           &kp F             &kp P               &trans             &trans       &kp L               &kp U               &kp Y           &trans
-&lt 5 A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G              &kp M        &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &mt LSHIFT O
-         &mt LCTRL K     &mt LEFT_ALT C    &mt LEFT_WIN D                                      &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
-                                           &kp LEFT_SHIFT      &lt 1 BACKSPACE    &lt 2 ENTER  &lt 3 SPACE
+&none    &kp W           &kp F             &kp P               &trans             &trans            &kp L               &kp U               &kp Y           &trans
+&lt 5 A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G              &kp M             &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &mt LSHIFT O
+         &mt LCTRL K     &mt LEFT_ALT C    &mt LEFT_WIN D                                           &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
+                                           &kp LEFT_SHIFT      &lt 1 BACKSPACE    &hold_repeat 2 0  &lt 3 SPACE
             >;
         };
 
