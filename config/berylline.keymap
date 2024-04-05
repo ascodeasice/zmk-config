@@ -206,7 +206,7 @@
         };
 
         w {
-            bindings = <&kp W>;
+            bindings = <&kp Y>;
             key-positions = <16 17>;
             layers = <0>;
         };
