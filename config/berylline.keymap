@@ -223,6 +223,7 @@
         key {
             bindings = <&key>;
             key-positions = <17 7>;
+            layers = <0>;
         };
     };
 
