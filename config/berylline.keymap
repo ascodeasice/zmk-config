@@ -150,6 +150,7 @@
             bindings = <&kp B>;
             key-positions = <12 13>;
             layers = <0>;
+            timeout-ms = <30>;
         };
 
         j {
@@ -209,14 +210,14 @@
             bindings = <&kp Y>;
             key-positions = <16 17>;
             layers = <0>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
         };
 
         k {
             bindings = <&kp K>;
             key-positions = <18 17>;
             layers = <0>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
         };
     };
 
@@ -235,7 +236,7 @@
         nav_layer {
             label = "Nav";
             bindings = <
-&none       &kp LA(F4)               &mmv MOVE_UP     &kp LA(TAB)               &none     &none      &trans          &kp UP          &trans        &none
+&none       &kp LA(F4)               &mmv MOVE_UP     &kp LA(TAB)               &none     &none      &kp K_MENU      &kp UP          &trans        &none
 &kp ESCAPE  &mmv MOVE_LEFT           &mmv MOVE_DOWN   &mmv MOVE_RIGHT           &trans    &trans     &kp LEFT        &kp DOWN        &kp RIGHT     &msc SCRL_RIGHT
             &mt LEFT_CONTROL DELETE  &mt LC(V) LC(C)  &mt PRINTSCREEN CAPSLOCK                       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP
                                                       &kp ENTER                 &to 0     &mkp LCLK  &mkp RCLK
