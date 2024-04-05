@@ -219,6 +219,20 @@
             layers = <0>;
             timeout-ms = <30>;
         };
+
+        key {
+            bindings = <&key>;
+            key-positions = <17 7>;
+        };
+    };
+
+    macros {
+        key: key {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp E &kp Y>;
+            label = "KEY";
+        };
     };
 
     keymap {
@@ -265,9 +279,9 @@
 
         MEDIA_LAYER {
             bindings = <
-&trans        &trans        &bt BT_CLR    &trans        &trans          &trans      &kp K_PREV         &kp K_PLAY_PAUSE  &kp K_NEXT     &trans
+&trans        &trans        &trans        &trans        &trans          &trans      &kp K_PREV         &kp K_PLAY_PAUSE  &kp K_NEXT     &trans
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp K_MUTE  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP   &kp C_BRI_DEC  &kp C_BRI_INC
-              &bt BT_PRV    &bootloader   &bt BT_NXT                                &trans             &bootloader       &trans
+              &bt BT_PRV    &bootloader   &bt BT_NXT                                &trans             &bootloader       &bt BT_CLR
                                           &trans        &to 0           &trans      &trans
             >;
         };
