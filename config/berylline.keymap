@@ -199,15 +199,9 @@
             layers = <0>;
         };
 
-        boot_left {
-            bindings = <&bootloader>;
-            key-positions = <20 21 22>;
-            layers = <4>;
-        };
-
-        boot_right {
-            bindings = <&bootloader>;
-            key-positions = <24 23 25>;
+        bt_clear_all {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <1 2 3>;
             layers = <4>;
         };
 
@@ -268,7 +262,7 @@
             bindings = <
 &trans        &trans        &bt BT_CLR    &trans        &trans          &trans      &kp K_PREV         &kp K_PLAY_PAUSE  &kp K_NEXT     &trans
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp K_MUTE  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP   &kp C_BRI_DEC  &kp C_BRI_INC
-              &bt BT_PRV    &trans        &bt BT_NXT                                &trans             &trans            &trans
+              &bt BT_PRV    &bootloader   &bt BT_NXT                                &trans             &bootloader       &trans
                                           &trans        &to 0           &trans      &trans
             >;
         };
