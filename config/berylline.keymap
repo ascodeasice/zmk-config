@@ -209,6 +209,12 @@
             key-positions = <24 23 25>;
             layers = <4>;
         };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <6 8>;
+            layers = <0>;
+        };
     };
 
     keymap {
@@ -216,10 +222,10 @@
 
         default_layer {
             bindings = <
-&none             &kp W           &kp F             &kp P               &kp B              &kp J        &kp L               &kp U               &kp Y           &kp SEMI
-&mt LEFT_SHIFT A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G              &kp M        &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &mt LSHIFT O
-                  &mt LCTRL K     &mt LEFT_ALT C    &mt LEFT_WIN D                                      &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
-                                                    &kp LEFT_SHIFT      &lt 1 BACKSPACE    &lt 2 ENTER  &lt 3 SPACE
+&none             &kp W           &kp F             &kp P               &trans             &trans          &kp L               &kp U               &kp Y           &trans
+&mt LEFT_SHIFT A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G              &kp M           &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &mt LSHIFT O
+                  &mt LCTRL K     &mt LEFT_ALT C    &mt LEFT_WIN D                                         &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
+                                                    &kp LEFT_SHIFT      &lt 1 BACKSPACE    &lt 2 C_REPEAT  &lt 3 SPACE
             >;
         };
 
