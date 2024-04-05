@@ -150,7 +150,7 @@
             bindings = <&kp B>;
             key-positions = <12 13>;
             layers = <0>;
-            timeout-ms = <30>;
+            timeout-ms = <35>;
         };
 
         j {
@@ -273,7 +273,7 @@
         sym_layer {
             label = "Sym";
             bindings = <
-&trans    &kp SEMI   &kp HASH   &kp DLLR          &none        &kp CARET  &kp AMPS   &kp SEMI   &kp COLON  &kp QMARK
+&trans    &kp SEMI   &trans     &trans            &none        &kp CARET  &kp AMPS   &kp SEMI   &kp COLON  &kp QMARK
 &kp EXCL  &kp TILDE  &kp MINUS  &kp EQUAL         &kp ASTRK    &kp BSLH   &kp LCTRL  &kp LSHFT  &kp LALT   &kp LGUI
           &kp AT     &kp HASH   &kp DOLLAR                                &kp PIPE   &kp LT     &kp GT
                                 &mt LSHIFT SPACE  &trans       &trans     &trans
