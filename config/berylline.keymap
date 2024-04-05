@@ -208,11 +208,13 @@
         w {
             bindings = <&kp W>;
             key-positions = <16 17>;
+            layers = <0>;
         };
 
         k {
-            bindings = <&kp M>;
-            key-positions = <19 18>;
+            bindings = <&kp K>;
+            key-positions = <18 17>;
+            layers = <0>;
         };
     };
 
