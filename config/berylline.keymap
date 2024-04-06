@@ -173,12 +173,6 @@
             layers = <0>;
         };
 
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <7 8>;
-            layers = <0>;
-        };
-
         slash {
             bindings = <&kp SLASH>;
             key-positions = <24 25>;
@@ -220,8 +214,8 @@
             layers = <0>;
         };
 
-        of {
-            bindings = <&of>;
+        you {
+            bindings = <&you>;
             key-positions = <7 17>;
             layers = <0>;
         };
@@ -238,9 +232,22 @@
             layers = <0>;
         };
 
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <16 18>;
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <16 17>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
+        key {
+            bindings = <&key>;
+            key-positions = <3 13>;
+        };
+
+        ctrl_b {
+            bindings = <&kp LC(B)>;
+            key-positions = <17 18>;
+            timeout-ms = <30>;
             layers = <0>;
         };
     };
@@ -253,10 +260,10 @@
             label = "THE";
         };
 
-        of: of {
+        you: of {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp O &kp F>;
+            bindings = <&kp Y &kp O &kp U>;
             label = "OF";
         };
 
@@ -265,6 +272,13 @@
             #binding-cells = <0>;
             bindings = <&kp A &kp N &kp D>;
             label = "AND";
+        };
+
+        key: key {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp E &kp Y>;
+            label = "KEY";
         };
     };
 
