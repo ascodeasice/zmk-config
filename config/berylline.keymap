@@ -280,6 +280,62 @@
             bindings = <&kp K &kp E &kp Y>;
             label = "KEY";
         };
+
+        fun: fun {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp U &kp N &kp C &kp T &kp I &kp O &kp N &kp SPACE>;
+            label = "FUN";
+        };
+
+        return: return {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp E &kp T &kp U &kp R &kp N &kp SPACE>;
+            label = "RETURN";
+        };
+
+        value: value {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp A &kp L &kp U &kp E &kp SPACE>;
+            label = "VALUE";
+        };
+
+        home_dir: home_dir {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp FSLH>;
+            label = "HOME_DIR";
+        };
+
+        s_neq: s_neq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EXCL &kp EQUAL &kp EQUAL>;
+            label = "S_NEQ";
+        };
+
+        lt: lt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp EQUAL>;
+            label = "LT";
+        };
+
+        gt: gt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp EQUAL>;
+            label = "GT";
+        };
+
+        arrow: arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT>;
+            label = "ARROW";
+        };
     };
 
     keymap {
