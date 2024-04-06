@@ -187,12 +187,6 @@
             layers = <0>;
         };
 
-        to_media {
-            bindings = <&to 4>;
-            key-positions = <1 2 3>;
-            layers = <0>;
-        };
-
         minus {
             bindings = <&kp MINUS>;
             key-positions = <23 24>;
@@ -294,12 +288,6 @@
             layers = <2>;
         };
 
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <2 12>;
-            layers = <0>;
-        };
-
         last_dir {
             bindings = <&last_dir>;
             key-positions = <1 11>;
@@ -310,6 +298,16 @@
             bindings = <&str>;
             key-positions = <16 17 18>;
             layers = <0>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <2 12>;
+        };
+
+        to_media {
+            bindings = <&to 4>;
+            key-positions = <1 2 3>;
         };
     };
 
