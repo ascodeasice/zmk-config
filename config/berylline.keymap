@@ -183,8 +183,9 @@
 
         semicolon {
             bindings = <&kp SEMI>;
-            key-positions = <23 25>;
+            key-positions = <16 18>;
             layers = <0>;
+            timeout-ms = <20>;
         };
 
         minus {
@@ -258,9 +259,8 @@
 
         s_eq {
             bindings = <&s_eq>;
-            key-positions = <16 18>;
+            key-positions = <25 23>;
             layers = <0>;
-            timeout-ms = <25>;
         };
 
         s_nq {
@@ -308,7 +308,7 @@
 
         to_media {
             bindings = <&to 4>;
-            key-positions = <12 13 14>;
+            key-positions = <23 24 25>;
             layers = <0>;
         };
     };
