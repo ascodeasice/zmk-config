@@ -352,7 +352,7 @@
             label = "S_NEQ";
         };
 
-        less: lt {
+        less: less {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LT &kp EQUAL>;
@@ -380,9 +380,9 @@
         default_layer {
             bindings = <
 &none      &kp W           &kp F             &kp P               &trans               &trans         &kp L               &kp U               &kp Y           &trans
-&less 5 A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G                &kp M          &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &mt LSHIFT O
+&lt 5 A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G                &kp M          &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &mt LSHIFT O
            &mt LCTRL K     &mt LEFT_ALT C    &mt LEFT_WIN D                                          &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
-                                             &kp LEFT_SHIFT      &less 1 BACKSPACE    &less 2 ENTER  &less 3 SPACE
+                                             &kp LEFT_SHIFT      &lt 1 BACKSPACE    &lt 2 ENTER  &lt 3 SPACE
             >;
         };
 
