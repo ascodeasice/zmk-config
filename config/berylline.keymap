@@ -166,7 +166,7 @@
             bindings = <&kp B>;
             key-positions = <12 13>;
             layers = <0>;
-            timeout-ms = <35>;
+            timeout-ms = <30>;
         };
 
         j {
