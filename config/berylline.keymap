@@ -242,6 +242,7 @@
         key {
             bindings = <&key>;
             key-positions = <3 13>;
+            layers = <0>;
         };
 
         ctrl_b {
@@ -249,6 +250,41 @@
             key-positions = <17 18>;
             timeout-ms = <30>;
             layers = <0>;
+        };
+
+        home_dir {
+            bindings = <&home_dir>;
+            key-positions = <1 3>;
+        };
+
+        s_eq {
+            bindings = <&s_neq>;
+            key-positions = <16 18>;
+            layers = <0>;
+            timeout-ms = <30>;
+        };
+
+        s_nq {
+            bindings = <&s_neq>;
+            key-positions = <7 8>;
+            layers = <0>;
+        };
+
+        less {
+            bindings = <&less>;
+            key-positions = <1 2>;
+        };
+
+        gt {
+            bindings = <&gt>;
+            key-positions = <21 20>;
+            layers = <2>;
+        };
+
+        arrow {
+            bindings = <&arrow>;
+            key-positions = <11 12>;
+            layers = <2>;
         };
     };
 
@@ -316,7 +352,7 @@
             label = "S_NEQ";
         };
 
-        lt: lt {
+        less: lt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LT &kp EQUAL>;
@@ -343,10 +379,10 @@
 
         default_layer {
             bindings = <
-&none    &kp W           &kp F             &kp P               &trans             &trans       &kp L               &kp U               &kp Y           &trans
-&lt 5 A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G              &kp M        &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &mt LSHIFT O
-         &mt LCTRL K     &mt LEFT_ALT C    &mt LEFT_WIN D                                      &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
-                                           &kp LEFT_SHIFT      &lt 1 BACKSPACE    &lt 2 ENTER  &lt 3 SPACE
+&none      &kp W           &kp F             &kp P               &trans               &trans         &kp L               &kp U               &kp Y           &trans
+&less 5 A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G                &kp M          &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &mt LSHIFT O
+           &mt LCTRL K     &mt LEFT_ALT C    &mt LEFT_WIN D                                          &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
+                                             &kp LEFT_SHIFT      &less 1 BACKSPACE    &less 2 ENTER  &less 3 SPACE
             >;
         };
 
@@ -391,9 +427,9 @@
 
         shortcut_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans                    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &fun    &return  &value  &trans
+        &trans  &trans  &trans                    &trans  &trans   &trans
                         &trans  &trans    &trans  &trans
             >;
         };
