@@ -200,6 +200,7 @@
         quote {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <8 6>;
+            layers = <0>;
         };
 
         to_nav {
@@ -255,6 +256,7 @@
         home_dir {
             bindings = <&home_dir>;
             key-positions = <1 3>;
+            layers = <0>;
         };
 
         s_eq {
@@ -273,6 +275,7 @@
         less {
             bindings = <&less>;
             key-positions = <1 2>;
+            layers = <2>;
         };
 
         gt {
