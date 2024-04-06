@@ -299,6 +299,18 @@
             key-positions = <2 12>;
             layers = <0>;
         };
+
+        last_dir {
+            bindings = <&last_dir>;
+            key-positions = <1 11>;
+            layers = <0>;
+        };
+
+        str {
+            bindings = <&str>;
+            key-positions = <16 17 18>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -398,6 +410,20 @@
             #binding-cells = <0>;
             bindings = <&kp E &kp X &kp P &kp O &kp R &kp T &kp SPACE>;
             label = "EXPORT";
+        };
+
+        last_dir: last_dir {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOT &kp DOT &kp FSLH>;
+            label = "LAST_DIR";
+        };
+
+        str: str {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DQT &kp DQT &kp LEFT>;
+            label = "STR";
         };
     };
 
