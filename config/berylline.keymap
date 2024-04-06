@@ -200,7 +200,7 @@
         };
 
         to_media {
-            bindings = <&to 5>;
+            bindings = <&to 4>;
             key-positions = <1 2 3>;
             layers = <0>;
         };
