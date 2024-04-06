@@ -271,6 +271,7 @@
             bindings = <&s_neq>;
             key-positions = <8 6>;
             layers = <0>;
+            timeout-ms = <30>;
         };
 
         less {
