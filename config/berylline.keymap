@@ -186,7 +186,7 @@
         };
 
         to_media {
-            bindings = <&to 4>;
+            bindings = <&to 5>;
             key-positions = <1 2 3>;
             layers = <0>;
         };
@@ -199,8 +199,9 @@
 
         quote {
             bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <8 6>;
+            key-positions = <17 18>;
             layers = <0>;
+            timeout-ms = <25>;
         };
 
         to_nav {
@@ -248,7 +249,7 @@
 
         ctrl_b {
             bindings = <&kp LC(B)>;
-            key-positions = <17 18>;
+            key-positions = <7 8>;
             timeout-ms = <30>;
             layers = <0>;
         };
@@ -263,12 +264,12 @@
             bindings = <&s_eq>;
             key-positions = <16 18>;
             layers = <0>;
-            timeout-ms = <30>;
+            timeout-ms = <25>;
         };
 
         s_nq {
             bindings = <&s_neq>;
-            key-positions = <7 8>;
+            key-positions = <8 6>;
             layers = <0>;
         };
 
@@ -382,6 +383,13 @@
             bindings = <&kp EQUAL &kp EQUAL &kp EQUAL>;
             label = "S_EQ";
         };
+
+        export: export {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &kp X &kp P &kp O &kp R &kp T &kp SPACE>;
+            label = "EXPORT";
+        };
     };
 
     keymap {
@@ -392,7 +400,7 @@
 &none    &kp W           &kp F             &kp P               &trans             &trans       &kp L               &kp U               &kp Y           &trans
 &lt 5 A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G              &kp M        &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &mt LSHIFT O
          &mt LCTRL K     &mt LEFT_ALT C    &mt LEFT_WIN D                                      &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
-                                           &kp LEFT_SHIFT      &lt 1 BACKSPACE    &lt 2 ENTER  &lt 3 SPACE
+                                           &kp LEFT_SHIFT      &lt 2 BACKSPACE    &lt 1 ENTER  &lt 4 SPACE
             >;
         };
 
@@ -438,7 +446,7 @@
         shortcut_layer {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans   &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &fun    &return  &value  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &fun    &return  &value  &export
         &trans  &trans  &trans                    &trans  &trans   &trans
                         &trans  &trans    &trans  &trans
             >;
