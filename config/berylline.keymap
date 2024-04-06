@@ -303,11 +303,13 @@
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <2 12>;
+            layers = <0>;
         };
 
         to_media {
             bindings = <&to 4>;
             key-positions = <1 2 3>;
+            layers = <0>;
         };
     };
 
