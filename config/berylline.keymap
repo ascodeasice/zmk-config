@@ -199,7 +199,7 @@
 
         quote {
             bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <17 19>;
+            key-positions = <8 6>;
         };
 
         to_nav {
@@ -258,7 +258,7 @@
         };
 
         s_eq {
-            bindings = <&s_neq>;
+            bindings = <&s_eq>;
             key-positions = <16 18>;
             layers = <0>;
             timeout-ms = <30>;
@@ -372,6 +372,13 @@
             bindings = <&kp EQUAL &kp GT>;
             label = "ARROW";
         };
+
+        s_eq: s_eq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp EQUAL &kp EQUAL>;
+            label = "S_EQ";
+        };
     };
 
     keymap {
@@ -379,10 +386,10 @@
 
         default_layer {
             bindings = <
-&none      &kp W           &kp F             &kp P               &trans               &trans         &kp L               &kp U               &kp Y           &trans
-&lt 5 A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G                &kp M          &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &mt LSHIFT O
-           &mt LCTRL K     &mt LEFT_ALT C    &mt LEFT_WIN D                                          &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
-                                             &kp LEFT_SHIFT      &lt 1 BACKSPACE    &lt 2 ENTER  &lt 3 SPACE
+&none    &kp W           &kp F             &kp P               &trans             &trans       &kp L               &kp U               &kp Y           &trans
+&lt 5 A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G              &kp M        &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &mt LSHIFT O
+         &mt LCTRL K     &mt LEFT_ALT C    &mt LEFT_WIN D                                      &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
+                                           &kp LEFT_SHIFT      &lt 1 BACKSPACE    &lt 2 ENTER  &lt 3 SPACE
             >;
         };
 
