@@ -94,20 +94,6 @@
             #binding-cells = <0>;
             bindings = <&kp F5>, <&kp F6>, <&kp F7>, <&kp F8>;
         };
-
-        ws_left: ws_left {
-            compatible = "zmk,behavior-tap-dance";
-            label = "WS_LEFT";
-            #binding-cells = <0>;
-            bindings = <&kp L>, <&kp LC(LA(LEFT))>;
-        };
-
-        ws_right: ws_right {
-            compatible = "zmk,behavior-tap-dance";
-            label = "WS_RIGHT";
-            #binding-cells = <0>;
-            bindings = <&kp Y>, <&kp LA(LC(RIGHT))>;
-        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -412,8 +398,8 @@
 
         default_layer {
             bindings = <
-&none    &kp W           &kp F             &kp P               &trans             &trans       &ws_left            &kp U               &ws_right       &trans
-&lt 5 A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G              &kp M        &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &mt LSHIFT O
+&none    &kp W           &kp F             &kp P               &trans             &trans       &mt LC(LA(LEFT)) L  &kp U               &mt LA(LC(RIGHT)) Y  &trans
+&lt 5 A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G              &kp M        &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I       &mt LSHIFT O
          &mt LCTRL K     &mt LEFT_ALT C    &mt LEFT_WIN D                                      &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
                                            &kp LEFT_SHIFT      &lt 2 BACKSPACE    &lt 1 ENTER  &lt 4 SPACE
             >;
