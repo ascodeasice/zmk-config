@@ -311,6 +311,12 @@
             key-positions = <23 24 25>;
             layers = <0>;
         };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <11 12 13>;
+            layers = <0>;
+        };
     };
 
     macros {
