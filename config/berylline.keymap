@@ -314,13 +314,16 @@
 
         delete {
             bindings = <&kp DELETE>;
-            key-positions = <11 12 13>;
+            key-positions = <11 10>;
             layers = <0>;
+            timeout-ms = <30>;
         };
 
         close_program {
             bindings = <&kp LA(F4)>;
-            key-positions = <1 3 2>;
+            key-positions = <14 13>;
+            timeout-ms = <30>;
+            layers = <0>;
         };
     };
 
