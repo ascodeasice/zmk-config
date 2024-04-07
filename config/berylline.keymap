@@ -151,14 +151,14 @@
         zero {
             bindings = <&kp N0>;
             key-positions = <20 21>;
-            layers = <0>;
+            layers = <0 2>;
             timeout-ms = <30>;
         };
 
         one {
             bindings = <&kp N1>;
             key-positions = <22 21>;
-            layers = <0>;
+            layers = <0 2>;
             timeout-ms = <30>;
         };
 
@@ -228,7 +228,7 @@
         two {
             bindings = <&kp NUMBER_2>;
             key-positions = <20 22>;
-            layers = <0>;
+            layers = <0 2>;
         };
 
         equal {
