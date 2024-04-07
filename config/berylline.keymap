@@ -425,6 +425,34 @@
             bindings = <&kp DQT &kp DQT &kp LEFT>;
             label = "STR";
         };
+
+        true: true {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp R &kp U &kp E &kp SPACE>;
+            label = "TRUE";
+        };
+
+        false: false {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp A &kp L &kp S &kp E &kp SPACE>;
+            label = "FALSE";
+        };
+
+        default: default {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp E &kp F &kp A &kp U &kp L &kp T &kp SPACE>;
+            label = "DEFAULT";
+        };
+
+        import: import {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp M &kp P &kp O &kp R &kp T &kp SPACE>;
+            label = "IMPORT";
+        };
     };
 
     keymap {
@@ -480,10 +508,10 @@
 
         shortcut_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans   &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &fun    &return  &value  &export
-        &trans  &trans  &trans                    &trans  &trans   &trans
-                        &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans      &trans        &trans  &true    &false    &trans  &trans
+&trans  &trans  &trans  &trans      &trans        &trans  &export  &default  &fun    &return
+        &trans  &trans  &trans                            &import  &value    &trans
+                        &sk LSHIFT  &caps_word    &trans  &trans
             >;
         };
     };
