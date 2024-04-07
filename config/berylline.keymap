@@ -300,8 +300,8 @@
             layers = <0>;
         };
 
-        backspace {
-            bindings = <&kp BACKSPACE>;
+        ctrl_backspace {
+            bindings = <&kp LC(BACKSPACE)>;
             key-positions = <2 12>;
             layers = <0>;
         };
@@ -474,10 +474,10 @@
 
         default_layer {
             bindings = <
-&none    &kp W           &kp F             &kp P               &trans                 &trans       &mt LC(LA(LEFT)) L  &kp U               &mt LA(LC(RIGHT)) Y  &trans
-&lt 5 A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G                  &kp M        &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I       &mt LSHIFT O
-         &mt LCTRL K     &mt LEFT_ALT C    &mt LEFT_WIN D                                          &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
-                                           &kp LEFT_SHIFT      &lt 2 LC(BACKSPACE)    &lt 1 ENTER  &lt 3 SPACE
+&none    &kp W           &kp F             &kp P               &trans             &trans       &mt LC(LA(LEFT)) L  &kp U               &mt LA(LC(RIGHT)) Y  &trans
+&lt 5 A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G              &kp M        &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I       &mt LSHIFT O
+         &mt LCTRL K     &mt LEFT_ALT C    &mt LEFT_WIN D                                      &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
+                                           &kp LEFT_SHIFT      &lt 2 BACKSPACE    &lt 1 ENTER  &lt 3 SPACE
             >;
         };
 
