@@ -453,6 +453,13 @@
             bindings = <&kp I &kp M &kp P &kp O &kp R &kp T &kp SPACE>;
             label = "IMPORT";
         };
+
+        continue: continue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp O &kp N &kp T &kp I &kp N &kp U &kp E>;
+            label = "CONTINUE";
+        };
     };
 
     keymap {
@@ -480,10 +487,10 @@
         sym_layer {
             label = "Sym";
             bindings = <
-&trans    &kp SEMI   &kp ASTRK  &kp COMMA   &none          &none          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &none
-&kp EXCL  &kp TILDE  &kp MINUS  &kp EQUAL   &kp PERCENT    &kp BACKSPACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp SINGLE_QUOTE
+&trans    &kp SEMI   &kp ASTRK  &kp TILDE   &none          &none          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &none
+&kp EXCL  &kp GRAVE  &kp COMMA  &kp DOT     &kp PERCENT    &kp BACKSPACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp SINGLE_QUOTE
           &kp AT     &kp HASH   &kp DOLLAR                                &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET
-                                &trans      &trans         &kp ENTER      &kp SPACE
+                                &trans      &trans         &kp ENTER      &mt LEFT_SHIFT SPACE
             >;
         };
 
@@ -508,9 +515,9 @@
 
         shortcut_layer {
             bindings = <
-&trans  &trans  &trans  &trans      &trans        &trans  &true    &false    &trans  &trans
-&trans  &trans  &trans  &trans      &trans        &trans  &export  &default  &fun    &return
-        &trans  &trans  &trans                            &import  &value    &trans
+&trans  &trans  &trans  &trans      &trans        &trans  &true    &false    &trans     &trans
+&trans  &trans  &trans  &trans      &trans        &trans  &export  &default  &fun       &return
+        &trans  &trans  &trans                            &import  &value    &continue
                         &sk LSHIFT  &caps_word    &trans  &trans
             >;
         };
