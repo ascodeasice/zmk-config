@@ -81,18 +81,25 @@
             global-quick-tap;
         };
 
-        f1to4: f1to4 {
+        f1to3: f1to3 {
             compatible = "zmk,behavior-tap-dance";
-            label = "F1TO4";
+            label = "F1TO3";
             #binding-cells = <0>;
-            bindings = <&kp F1>, <&kp F2>, <&kp F3>, <&kp F4>;
+            bindings = <&kp F1>, <&kp F2>, <&kp F3>;
         };
 
-        f5to8: f5to8 {
+        f4to6: f4to6 {
             compatible = "zmk,behavior-tap-dance";
-            label = "F5TO8";
+            label = "F4TO6";
             #binding-cells = <0>;
-            bindings = <&kp F5>, <&kp F6>, <&kp F7>, <&kp F8>;
+            bindings = <&kp F4>, <&kp F5>, <&kp F6>;
+        };
+
+        f7to9: f7to9 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "F7TO9";
+            #binding-cells = <0>;
+            bindings = <&kp F7>, <&kp F8>, <&kp F9>;
         };
     };
 
@@ -330,13 +337,13 @@
             bindings = <&kp LA(LC(LEFT_ARROW))>;
             key-positions = <15 16>;
             layers = <0>;
-            timeout-ms = <30>;
+            timeout-ms = <25>;
         };
 
         right_workspace {
             bindings = <&kp LC(LA(RIGHT))>;
             key-positions = <19 18>;
-            timeout-ms = <30>;
+            timeout-ms = <25>;
             layers = <0>;
         };
     };
@@ -495,6 +502,20 @@
             bindings = <&kp E &kp N2 &kp N4 &kp N1 &kp N0 &kp N6 &kp N2 &kp N5 &kp N4>;
             label = "STU_ID";
         };
+
+        paren_word: paren_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR &kp LEFT>;
+            label = "PAREN_WORD";
+        };
+
+        md_link: md_link {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR &kp LBKT &kp RIGHT_BRACKET &kp LEFT &kp LEFT &kp LEFT>;
+            label = "MD_LINK";
+        };
     };
 
     keymap {
@@ -532,9 +553,9 @@
         num_layer {
             label = "Num";
             bindings = <
-&none         &f1to4        &f5to8         &kp F9         &none     &none   &kp F10        &kp F11        &kp F12       &none
+&none         &f1to3        &f4to6         &f7to9         &none     &none   &kp F10        &kp F11        &kp F12       &none
 &mtl LGUI N1  &mtl LALT N2  &mtl LSHFT N3  &mtl LCTRL N4  &kp N5    &kp N6  &mtr LCTRL N7  &mtr LSHFT N8  &mtr LALT N9  &mtr LGUI N0
-              &none         &none          &none                            &none          &none          &none
+              &none         &none          &none                            &none          &kp COMMA      &kp DOT
                                            &trans         &trans    &trans  &trans
             >;
         };
@@ -550,10 +571,10 @@
 
         shortcut_layer {
             bindings = <
-&trans  &trans  &trans  &trans      &trans        &trans  &true    &false    &trans     &trans
-&trans  &trans  &trans  &stu_id     &trans        &trans  &export  &default  &fun       &return
-        &trans  &trans  &trans                            &import  &value    &continue
-                        &sk LSHIFT  &caps_word    &trans  &trans
+&trans  &trans  &md_link  &paren_word  &trans        &trans  &true    &false    &trans     &trans
+&trans  &trans  &trans    &stu_id      &trans        &trans  &export  &default  &fun       &return
+        &trans  &trans    &trans                             &import  &value    &continue
+                          &sk LSHIFT   &caps_word    &trans  &trans
             >;
         };
     };
