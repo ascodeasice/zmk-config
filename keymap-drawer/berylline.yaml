@@ -95,9 +95,9 @@ layers:
   - {t: SPACE, h: LEFT SHIFT}
   num:
   - ''
-  - '&f1to4'
-  - '&f5to8'
-  - F9
+  - '&f1to3'
+  - '&f4to6'
+  - '&f7to9'
   - ''
   - ''
   - F10
@@ -118,8 +118,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - ','
+  - .
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -158,8 +158,8 @@ layers:
   shortcut:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&md_link'
+  - '&paren_word'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&true'
