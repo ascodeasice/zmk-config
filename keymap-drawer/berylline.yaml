@@ -64,9 +64,9 @@ layers:
   - {t: ENTER, type: held}
   sym:
   - {t: ▽, type: trans}
-  - ;
   - '*'
-  - '~'
+  - ','
+  - .
   - ''
   - ''
   - '{'
@@ -75,8 +75,8 @@ layers:
   - ''
   - '!'
   - '`'
-  - ','
-  - .
+  - ;
+  - '='
   - '%'
   - BACKSPACE
   - (
