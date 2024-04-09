@@ -120,8 +120,8 @@ layers:
   - ''
   - ','
   - .
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - SPACE
+  - ENTER
   - {type: held}
   - {t: ▽, type: trans}
   MEDIA_LAYER:
