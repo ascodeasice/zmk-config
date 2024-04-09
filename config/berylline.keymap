@@ -343,7 +343,7 @@
         right_workspace {
             bindings = <&kp LC(LA(RIGHT))>;
             key-positions = <19 18>;
-            timeout-ms = <25>;
+            timeout-ms = <20>;
             layers = <0>;
         };
     };
