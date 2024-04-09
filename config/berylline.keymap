@@ -526,7 +526,7 @@
 &none    &kp W           &kp F             &kp P               &trans             &trans       &kp L               &kp U               &kp Y           &trans
 &lt 5 A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G              &kp M        &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &mt LSHIFT O
          &mt LCTRL K     &mt LEFT_ALT C    &mt LEFT_WIN D                                      &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
-                                           &kp LEFT_SHIFT      &lt 2 BACKSPACE    &lt 1 ENTER  &lt 3 SPACE
+                                           &kp LEFT_SHIFT      &lt 2 BACKSPACE    &lt 3 ENTER  &lt 1 SPACE
             >;
         };
 
