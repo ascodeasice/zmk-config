@@ -27,7 +27,7 @@ layers:
   - {t: H, h: LEFT GUI}
   - {t: ',', h: LEFT ALT}
   - {t: ., h: LCTRL}
-  - LEFT SHIFT
+  - '&ss_or_cap'
   - {t: BACKSPACE, h: sym}
   - {t: ENTER, h: num}
   - {t: SPACE, h: nav}
