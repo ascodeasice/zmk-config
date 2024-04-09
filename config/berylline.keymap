@@ -486,14 +486,14 @@
         true: true {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp R &kp U &kp E &kp SPACE>;
+            bindings = <&kp T &kp R &kp U &kp E>;
             label = "TRUE";
         };
 
         false: false {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F &kp A &kp L &kp S &kp E &kp SPACE>;
+            bindings = <&kp F &kp A &kp L &kp S &kp E>;
             label = "FALSE";
         };
 
