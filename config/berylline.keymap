@@ -307,7 +307,7 @@
 
         gt {
             bindings = <&gt>;
-            key-positions = <21 20>;
+            key-positions = <2 3>;
             layers = <2>;
         };
 
