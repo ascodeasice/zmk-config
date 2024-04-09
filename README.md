@@ -4,6 +4,6 @@
 
 ## keymap
 
-drawn with this [workflow](https://github.com/caksoylar/zmk-config?tab=readme-ov-file)
+drawn with this [workflow](https://github.com/caksoylar/keymap-drawer)
 
 ![Keymap](./keymap-drawer/berylline.svg)
