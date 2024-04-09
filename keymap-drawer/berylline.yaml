@@ -27,7 +27,7 @@ layers:
   - {t: H, h: LEFT GUI}
   - {t: ',', h: LEFT ALT}
   - {t: ., h: LCTRL}
-  - '&ss_or_cap'
+  - '&shift_or_cap'
   - {t: BACKSPACE, h: sym}
   - {t: ENTER, h: num}
   - {t: SPACE, h: nav}
@@ -257,7 +257,7 @@ combos:
   k: '&home_dir'
   l: [default]
 - p: [25, 23]
-  k: '&s_eq'
+  k: '*'
   l: [default]
 - p: [8, 6]
   k: '&s_neq'
