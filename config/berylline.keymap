@@ -122,6 +122,15 @@
             #binding-cells = <0>;
             bindings = <&index0>, <&index1>;
         };
+
+        swap_quote: swap_quote {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SWAP_QUOTE";
+            bindings = <&kp DOUBLE_QUOTES>, <&kp SINGLE_QUOTE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -223,8 +232,8 @@
             layers = <0>;
         };
 
-        quote {
-            bindings = <&kp SINGLE_QUOTE>;
+        swap_quote {
+            bindings = <&swap_quote>;
             key-positions = <17 18>;
             layers = <0>;
             timeout-ms = <25>;
@@ -587,7 +596,7 @@
             label = "Sym";
             bindings = <
 &trans    &kp ASTRK  &kp COMMA  &kp DOT     &none          &none          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &none
-&kp EXCL  &kp GRAVE  &kp SEMI   &kp EQUAL   &kp PERCENT    &kp BACKSPACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp SINGLE_QUOTE
+&kp EXCL  &kp GRAVE  &kp SEMI   &kp EQUAL   &kp PERCENT    &kp BACKSPACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &swap_quote
           &kp AT     &kp HASH   &kp DOLLAR                                &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET
                                 &trans      &trans         &kp ENTER      &mt LEFT_SHIFT SPACE
             >;
