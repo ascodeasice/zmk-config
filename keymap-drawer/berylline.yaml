@@ -47,7 +47,7 @@ layers:
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_RIGHT'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ENTER
   - LEFT
   - DOWN
   - RIGHT
