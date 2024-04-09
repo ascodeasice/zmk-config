@@ -108,6 +108,20 @@
             #binding-cells = <0>;
             bindings = <&sk LEFT_SHIFT>, <&caps_word>;
         };
+
+        index_i_j: index_i_j {
+            compatible = "zmk,behavior-tap-dance";
+            label = "INDEX_I_J";
+            #binding-cells = <0>;
+            bindings = <&index_i>, <&index_j>;
+        };
+
+        index_0_1: index_0_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "INDEX_0_1";
+            #binding-cells = <0>;
+            bindings = <&index0>, <&index1>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -524,6 +538,34 @@
             bindings = <&kp LPAR &kp RPAR &kp LBKT &kp RIGHT_BRACKET &kp LEFT &kp LEFT &kp LEFT>;
             label = "MD_LINK";
         };
+
+        index_i: index_i {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp I &kp RIGHT_BRACKET>;
+            label = "INDEX_I";
+        };
+
+        index_j: index_j {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp J &kp RIGHT_BRACKET>;
+            label = "INDEX_J";
+        };
+
+        index0: index0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp N0 &kp RIGHT_BRACKET>;
+            label = "INDEX0";
+        };
+
+        index1: index1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp N1 &kp RIGHT_BRACKET>;
+            label = "INDEX1";
+        };
     };
 
     keymap {
@@ -572,17 +614,17 @@
             bindings = <
 &trans        &trans        &trans        &trans        &trans          &trans      &kp K_PREV         &kp K_PLAY_PAUSE  &kp K_NEXT     &trans
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp K_MUTE  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP   &kp C_BRI_DEC  &kp C_BRI_INC
-              &bt BT_PRV    &bootloader   &bt BT_NXT                                &trans             &bootloader       &bt BT_CLR
+              &trans        &bootloader   &trans                                    &trans             &bootloader       &bt BT_CLR
                                           &trans        &to 0           &trans      &trans
             >;
         };
 
         shortcut_layer {
             bindings = <
-&trans  &trans  &md_link  &paren_word  &trans        &trans  &true    &false    &trans     &trans
-&trans  &trans  &trans    &stu_id      &trans        &trans  &export  &default  &fun       &return
-        &trans  &trans    &trans                             &import  &value    &continue
-                          &sk LSHIFT   &caps_word    &trans  &trans
+&trans  &trans   &md_link    &paren_word  &trans        &trans  &true    &false    &trans     &trans
+&trans  &stu_id  &index_i_j  &index_0_1   &trans        &trans  &export  &default  &fun       &return
+        &trans   &trans      &trans                             &import  &value    &continue
+                             &sk LSHIFT   &caps_word    &trans  &trans
             >;
         };
     };
