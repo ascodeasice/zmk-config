@@ -566,6 +566,13 @@
             bindings = <&kp LBKT &kp N1 &kp RIGHT_BRACKET>;
             label = "INDEX1";
         };
+
+        length: length {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp E &kp N &kp G &kp T &kp H>;
+            label = "LENGTH";
+        };
     };
 
     keymap {
@@ -621,7 +628,7 @@
 
         shortcut_layer {
             bindings = <
-&trans  &trans   &md_link    &paren_word  &trans        &trans  &true    &false    &trans     &trans
+&trans  &trans   &md_link    &paren_word  &trans        &trans  &true    &false    &length    &trans
 &trans  &stu_id  &index_i_j  &index_0_1   &trans        &trans  &export  &default  &fun       &return
         &trans   &trans      &trans                             &import  &value    &continue
                              &sk LSHIFT   &caps_word    &trans  &trans
