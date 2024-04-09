@@ -145,9 +145,9 @@ layers:
   - VOLUME UP
   - BRI DEC
   - BRI INC
-  - BT PRV
+  - {t: ▽, type: trans}
   - '&bootloader'
-  - BT NXT
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&bootloader'
   - BT CLR
@@ -167,9 +167,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - '&stu_id'
+  - '&index_i_j'
+  - '&index_0_1'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&export'
