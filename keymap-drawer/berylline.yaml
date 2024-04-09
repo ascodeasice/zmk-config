@@ -289,9 +289,3 @@ combos:
 - p: [14, 13]
   k: LA(F4)
   l: [default]
-- p: [15, 16]
-  k: LA(LC(LEFT ARROW))
-  l: [default]
-- p: [19, 18]
-  k: LC(LA(RIGHT))
-  l: [default]
