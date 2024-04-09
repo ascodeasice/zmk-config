@@ -29,8 +29,8 @@ layers:
   - {t: ., h: LCTRL}
   - LEFT SHIFT
   - {t: BACKSPACE, h: sym}
-  - {t: ENTER, h: nav}
-  - {t: SPACE, h: num}
+  - {t: ENTER, h: num}
+  - {t: SPACE, h: nav}
   nav:
   - ''
   - LA(F4)
@@ -60,8 +60,8 @@ layers:
   - '&msc SCRL_UP'
   - '&mkp LCLK'
   - '&mkp RCLK'
-  - {t: default, h: toggle, type: held}
-  - ENTER
+  - {t: default, h: toggle}
+  - {t: ENTER, type: held}
   sym:
   - {t: ▽, type: trans}
   - ;
@@ -122,8 +122,8 @@ layers:
   - .
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   MEDIA_LAYER:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
