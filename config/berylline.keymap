@@ -354,20 +354,6 @@
             timeout-ms = <30>;
             layers = <0>;
         };
-
-        left_workspace {
-            bindings = <&kp LA(LC(LEFT_ARROW))>;
-            key-positions = <15 16>;
-            layers = <0>;
-            timeout-ms = <25>;
-        };
-
-        right_workspace {
-            bindings = <&kp LC(LA(RIGHT))>;
-            key-positions = <19 18>;
-            timeout-ms = <20>;
-            layers = <0>;
-        };
     };
 
     macros {
