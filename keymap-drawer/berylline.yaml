@@ -39,7 +39,7 @@ layers:
   - ''
   - ''
   - CONTEXT MENU
-  - UP
+  - {t: UP, h: LC(HOME)}
   - {t: ▽, type: trans}
   - ''
   - ESCAPE
@@ -48,9 +48,9 @@ layers:
   - '&mmv MOVE_RIGHT'
   - {t: ▽, type: trans}
   - ENTER
-  - LEFT
-  - DOWN
-  - RIGHT
+  - {t: LEFT, h: HOME}
+  - {t: DOWN, h: LC(END)}
+  - {t: RIGHT, h: END}
   - '&msc SCRL_RIGHT'
   - {t: DELETE, h: LEFT CONTROL}
   - {t: LC(C), h: LC(V)}
