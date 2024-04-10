@@ -27,7 +27,7 @@ layers:
   - {t: H, h: LEFT GUI}
   - {t: ',', h: LEFT ALT}
   - {t: ., h: LCTRL}
-  - '&shift_or_cap'
+  - LSHIFT
   - {t: BACKSPACE, h: sym}
   - {t: ENTER, h: num}
   - {t: SPACE, h: nav}
@@ -82,7 +82,7 @@ layers:
   - (
   - )
   - '&'
-  - ''''
+  - {t: '"', s: ''''}
   - '@'
   - '#'
   - $
@@ -227,7 +227,7 @@ combos:
   k: '-'
   l: [default]
 - p: [17, 18]
-  k: ''''
+  k: {t: '"', s: ''''}
   l: [default]
 - p: [20, 21, 22]
   k: {t: nav, h: toggle}

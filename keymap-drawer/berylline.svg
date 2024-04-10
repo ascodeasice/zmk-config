@@ -225,7 +225,7 @@ path.combo {
 </g>
 <g transform="translate(196, 196)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 60%">&amp;shift_or_cap</tspan></text>
+<text x="0" y="0" class="key tap">LSHIFT</text>
 </g>
 <g transform="translate(252, 196)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -300,7 +300,8 @@ path.combo {
 </g>
 <g class="combo combopos-13">
 <rect rx="6" ry="6" x="490" y="71" width="28" height="26" class="combo"/>
-<text x="504" y="84" class="combo tap">&#x27;</text>
+<text x="504" y="84" class="combo tap">&quot;</text>
+<text x="504" y="73" class="combo shifted">&#x27;</text>
 </g>
 <g class="combo combopos-14">
 <path d="M140,140 l-37,0" class="combo"/>
@@ -613,7 +614,8 @@ path.combo {
 </g>
 <g transform="translate(588, 84)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&#x27;</text>
+<text x="0" y="0" class="key tap">&quot;</text>
+<text x="0" y="-24" class="key shifted">&#x27;</text>
 </g>
 <g transform="translate(84, 140)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
