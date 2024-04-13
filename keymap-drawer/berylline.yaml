@@ -115,8 +115,8 @@ layers:
   - {t: '9', h: LALT}
   - {t: '0', h: LGUI}
   - ''
-  - ''
-  - ''
+  - LEFT
+  - RIGHT
   - ''
   - ','
   - .
