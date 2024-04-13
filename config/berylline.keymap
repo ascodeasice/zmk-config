@@ -608,7 +608,7 @@
             bindings = <
 &none         &f1to3        &f4to6         &f7to9         &none        &none   &kp F10        &kp F11        &kp F12       &none
 &mtl LGUI N1  &mtl LALT N2  &mtl LSHFT N3  &mtl LCTRL N4  &kp N5       &kp N6  &mtr LCTRL N7  &mtr LSHFT N8  &mtr LALT N9  &mtr LGUI N0
-              &none         &none          &none                               &none          &kp COMMA      &kp DOT
+              &none         &kp LEFT       &kp RIGHT                           &none          &kp COMMA      &kp DOT
                                            &kp SPACE      &kp ENTER    &trans  &trans
             >;
         };
