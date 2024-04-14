@@ -233,7 +233,7 @@ combos:
   k: {t: nav, h: toggle}
   l: [default]
 - p: [6, 16]
-  k: '&the'
+  k: '&const'
   l: [default]
 - p: [7, 17]
   k: '&you'
