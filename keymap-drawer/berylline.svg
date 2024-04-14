@@ -385,7 +385,7 @@ path.combo {
 </g>
 <g class="combo combopos-30">
 <rect rx="6" ry="6" x="126" y="43" width="28" height="26" class="combo"/>
-<text x="140" y="56" class="combo tap"><tspan style="font-size: 60%">LC(BACKSPACE)</tspan></text>
+<text x="140" y="56" class="combo tap"><tspan style="font-size: 60%">&amp;delete_word</tspan></text>
 </g>
 </g>
 </g>
