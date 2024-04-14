@@ -110,18 +110,18 @@
             bindings = <&kp LSHIFT>, <&caps_word>;
         };
 
-        index_i_j: index_i_j {
+        index_i_j_k: index_i_j_k {
             compatible = "zmk,behavior-tap-dance";
-            label = "INDEX_I_J";
+            label = "INDEX_I_J_K";
             #binding-cells = <0>;
-            bindings = <&index_i>, <&index_j>;
+            bindings = <&index_i>, <&index_j>, <&index_k>;
         };
 
-        index_0_1: index_0_1 {
+        index_0_1_2: index_0_1_2 {
             compatible = "zmk,behavior-tap-dance";
-            label = "INDEX_0_1";
+            label = "INDEX_0_1_2";
             #binding-cells = <0>;
-            bindings = <&index0>, <&index1>;
+            bindings = <&index0>, <&index1>, <&index_2>;
         };
 
         swap_quote: swap_quote {
@@ -283,8 +283,8 @@
             layers = <0>;
         };
 
-        ctrl_b {
-            bindings = <&kp LC(B)>;
+        s_eq {
+            bindings = <&s_eq>;
             key-positions = <7 8>;
             timeout-ms = <30>;
             layers = <0>;
@@ -339,12 +339,6 @@
             layers = <0>;
         };
 
-        ctrl_backspace {
-            bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <2 12>;
-            layers = <0>;
-        };
-
         to_media {
             bindings = <&to 4>;
             key-positions = <23 24 25>;
@@ -362,6 +356,12 @@
             bindings = <&kp LA(F4)>;
             key-positions = <14 13>;
             timeout-ms = <30>;
+            layers = <0>;
+        };
+
+        delete_word {
+            bindings = <&kp LC(BACKSPACE)>;
+            key-positions = <2 12>;
             layers = <0>;
         };
     };
@@ -569,6 +569,20 @@
             bindings = <&kp L &kp E &kp N &kp G &kp T &kp H>;
             label = "LENGTH";
         };
+
+        index_2: index_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp N2 &kp RIGHT_BRACKET>;
+            label = "INDEX_2";
+        };
+
+        index_k: index_k {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp K &kp RBKT>;
+            label = "INDEX_K";
+        };
     };
 
     keymap {
@@ -624,10 +638,10 @@
 
         shortcut_layer {
             bindings = <
-&trans  &trans   &md_link    &paren_word  &trans        &trans  &true    &false    &length    &trans
-&trans  &stu_id  &index_i_j  &index_0_1   &trans        &trans  &export  &default  &fun       &return
-        &trans   &trans      &trans                             &import  &value    &continue
-                             &sk LSHIFT   &caps_word    &trans  &trans
+&trans  &trans   &md_link      &paren_word   &trans        &trans  &true    &false    &length    &trans
+&trans  &stu_id  &index_i_j_k  &index_0_1_2  &trans        &trans  &export  &default  &fun       &return
+        &trans   &trans        &trans                              &import  &value    &continue
+                               &sk LSHIFT    &caps_word    &trans  &trans
             >;
         };
     };
