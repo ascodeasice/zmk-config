@@ -360,7 +360,7 @@
         };
 
         delete_word {
-            bindings = <&kp LC(BACKSPACE)>;
+            bindings = <&delete_word>;
             key-positions = <2 12>;
             layers = <0>;
         };
@@ -595,6 +595,13 @@
             #binding-cells = <0>;
             bindings = <&kp PIPE &kp PIPE>;
             label = "SYM_OR";
+        };
+
+        delete_word: delete_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(BACKSPACE)>;
+            label = "DELETE_WORD";
         };
     };
 
