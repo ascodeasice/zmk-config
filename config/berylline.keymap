@@ -373,11 +373,11 @@
     };
 
     macros {
-        const: the {
+        const: const {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C &kp O &kp N &kp S &kp T>;
-            label = "THE";
+            bindings = <&kp C &kp O &kp N &kp S &kp T &kp SPACE>;
+            label = "CONST";
         };
 
         you: of {
