@@ -39,7 +39,7 @@ layers:
   - ''
   - ''
   - CONTEXT MENU
-  - {t: UP, h: LC(HOME)}
+  - {t: UP, h: PAGE UP}
   - {t: ▽, type: trans}
   - ''
   - ESCAPE
@@ -49,7 +49,7 @@ layers:
   - {t: ▽, type: trans}
   - ENTER
   - {t: LEFT, h: HOME}
-  - {t: DOWN, h: LC(END)}
+  - {t: DOWN, h: PAGE DOWN}
   - {t: RIGHT, h: END}
   - '&msc SCRL_RIGHT'
   - {t: DELETE, h: LEFT CONTROL}
@@ -285,9 +285,6 @@ combos:
   l: [default]
 - p: [14, 13]
   k: LA(F4)
-  l: [default]
-- p: [2, 12]
-  k: '&delete_word'
   l: [default]
 - p: [8, 7]
   k: '&sym_or'
