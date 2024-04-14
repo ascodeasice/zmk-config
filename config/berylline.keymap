@@ -364,6 +364,12 @@
             key-positions = <2 12>;
             layers = <0>;
         };
+
+        sym_or {
+            bindings = <&sym_or>;
+            key-positions = <8 7>;
+            layers = <2>;
+        };
     };
 
     macros {
@@ -582,6 +588,13 @@
             #binding-cells = <0>;
             bindings = <&kp LBKT &kp K &kp RBKT>;
             label = "INDEX_K";
+        };
+
+        sym_or: sym_or {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PIPE &kp PIPE>;
+            label = "SYM_OR";
         };
     };
 
