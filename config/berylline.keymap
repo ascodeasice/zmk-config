@@ -359,12 +359,6 @@
             layers = <0>;
         };
 
-        delete_word {
-            bindings = <&delete_word>;
-            key-positions = <2 12>;
-            layers = <0>;
-        };
-
         sym_or {
             bindings = <&sym_or>;
             key-positions = <8 7>;
@@ -596,13 +590,6 @@
             bindings = <&kp PIPE &kp PIPE>;
             label = "SYM_OR";
         };
-
-        delete_word: delete_word {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(BACKSPACE)>;
-            label = "DELETE_WORD";
-        };
     };
 
     keymap {
@@ -620,9 +607,9 @@
         nav_layer {
             label = "Nav";
             bindings = <
-&none       &kp LA(F4)               &mmv MOVE_UP     &kp LA(TAB)               &none        &none      &kp K_CONTEXT_MENU  &mt LC(HOME) UP   &trans         &none
-&kp ESCAPE  &mmv MOVE_LEFT           &mmv MOVE_DOWN   &mmv MOVE_RIGHT           &trans       &kp ENTER  &mt HOME LEFT       &mt LC(END) DOWN  &mt END RIGHT  &msc SCRL_RIGHT
-            &mt LEFT_CONTROL DELETE  &mt LC(V) LC(C)  &mt PRINTSCREEN CAPSLOCK                          &msc SCRL_LEFT      &msc SCRL_DOWN    &msc SCRL_UP
+&none       &kp LA(F4)               &mmv MOVE_UP     &kp LA(TAB)               &none        &none      &kp K_CONTEXT_MENU  &mt PAGE_UP UP      &trans         &none
+&kp ESCAPE  &mmv MOVE_LEFT           &mmv MOVE_DOWN   &mmv MOVE_RIGHT           &trans       &kp ENTER  &mt HOME LEFT       &mt PAGE_DOWN DOWN  &mt END RIGHT  &msc SCRL_RIGHT
+            &mt LEFT_CONTROL DELETE  &mt LC(V) LC(C)  &mt PRINTSCREEN CAPSLOCK                          &msc SCRL_LEFT      &msc SCRL_DOWN      &msc SCRL_UP
                                                       &mkp LCLK                 &mkp RCLK    &to 0      &kp ENTER
             >;
         };
