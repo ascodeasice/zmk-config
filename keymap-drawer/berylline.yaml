@@ -289,3 +289,6 @@ combos:
 - p: [2, 12]
   k: LC(BACKSPACE)
   l: [default]
+- p: [8, 7]
+  k: '&sym_or'
+  l: [sym]
