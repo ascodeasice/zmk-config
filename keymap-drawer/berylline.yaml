@@ -177,8 +177,8 @@ layers:
   - '&fun'
   - '&return'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&v_save_exit'
+  - '&localhost_url'
   - '&import'
   - '&value'
   - '&continue'
@@ -286,6 +286,3 @@ combos:
 - p: [8, 7]
   k: '&sym_or'
   l: [sym]
-- p: [2, 12]
-  k: '&v_save_exit'
-  l: [default]
