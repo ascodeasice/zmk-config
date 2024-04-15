@@ -359,12 +359,6 @@
             key-positions = <8 7>;
             layers = <2>;
         };
-
-        vim_zz {
-            bindings = <&v_save_exit>;
-            key-positions = <2 12>;
-            layers = <0>;
-        };
     };
 
     macros {
@@ -681,10 +675,10 @@
 
         shortcut_layer {
             bindings = <
-&trans  &v_replace  &md_link      &paren_word   &trans        &trans  &true    &false    &length    &trans
-&trans  &stu_id     &index_i_j_k  &index_0_1_2  &trans        &trans  &export  &default  &fun       &return
-        &trans      &trans        &trans                              &import  &value    &continue
-                                  &sk LSHIFT    &caps_word    &trans  &trans
+&trans  &v_replace  &md_link      &paren_word     &trans        &trans  &true    &false    &length    &trans
+&trans  &stu_id     &index_i_j_k  &index_0_1_2    &trans        &trans  &export  &default  &fun       &return
+        &trans      &v_save_exit  &localhost_url                        &import  &value    &continue
+                                  &sk LSHIFT      &caps_word    &trans  &trans
             >;
         };
     };
