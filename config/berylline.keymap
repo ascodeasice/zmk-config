@@ -33,7 +33,7 @@
 
 /* Mod Tap Parameters */
 
-#define TAPPING_TERM 300
+#define TAPPING_TERM 200
 #define TD_TAPPING_TERM 325
 #define QUICK_TAP_TERM 175
 
