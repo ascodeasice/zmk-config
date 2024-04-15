@@ -12,14 +12,14 @@ layers:
   - Y
   - {t: ▽, type: trans}
   - {t: A, h: shortcut}
-  - {t: R, h: LC(LWIN)}
-  - {t: S, h: LC(LSHIFT)}
-  - {t: T, h: LC(LEFT ALT)}
+  - {t: R, h: Ctl+ LWIN}
+  - {t: S, h: Ctl+ LSHIFT}
+  - {t: T, h: Ctl+ LEFT ALT}
   - G
   - M
-  - {t: N, h: LC(LEFT ALT)}
-  - {t: E, h: LC(LSHIFT)}
-  - {t: I, h: LC(LWIN)}
+  - {t: N, h: Ctl+ LEFT ALT}
+  - {t: E, h: Ctl+ LSHIFT}
+  - {t: I, h: Ctl+ LWIN}
   - {t: O, h: LSHIFT}
   - {t: K, h: LCTRL}
   - {t: C, h: LEFT ALT}
@@ -33,9 +33,9 @@ layers:
   - {t: SPACE, h: nav}
   nav:
   - ''
-  - LA(F4)
+  - Alt+ F4
   - '&mmv MOVE_UP'
-  - LA(TAB)
+  - Alt+ TAB
   - ''
   - ''
   - CONTEXT MENU
@@ -53,7 +53,7 @@ layers:
   - {t: RIGHT, h: END}
   - '&msc SCRL_RIGHT'
   - {t: DELETE, h: LEFT CONTROL}
-  - {t: LC(C), h: LC(V)}
+  - {t: Ctl+ C, h: Ctl+ V}
   - {t: CAPSLOCK, h: PRINTSCREEN}
   - '&msc SCRL_LEFT'
   - '&msc SCRL_DOWN'
@@ -157,7 +157,7 @@ layers:
   - {t: ▽, type: trans}
   shortcut:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&v_replace'
   - '&md_link'
   - '&paren_word'
   - {t: ▽, type: trans}
@@ -233,13 +233,13 @@ combos:
   k: {t: nav, h: toggle}
   l: [default]
 - p: [6, 16]
-  k: '&const'
+  k: '&str'
   l: [default]
 - p: [7, 17]
-  k: '&you'
+  k: '&bracket_word'
   l: [default]
 - p: [8, 18]
-  k: '&and'
+  k: '&var_text'
   l: [default]
 - p: [20, 22]
   k: '2'
@@ -274,9 +274,6 @@ combos:
 - p: [1, 11]
   k: '&last_dir'
   l: [default]
-- p: [16, 17, 18]
-  k: '&str'
-  l: [default]
 - p: [23, 24, 25]
   k: {t: MEDIA_LAYER, h: toggle}
   l: [default]
@@ -284,8 +281,11 @@ combos:
   k: DELETE
   l: [default]
 - p: [14, 13]
-  k: LA(F4)
+  k: Alt+ F4
   l: [default]
 - p: [8, 7]
   k: '&sym_or'
   l: [sym]
+- p: [2, 12]
+  k: '&v_save_exit'
+  l: [default]
