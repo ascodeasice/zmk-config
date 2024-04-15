@@ -470,7 +470,7 @@
         str: str {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DQT &kp DQT &kp LEFT>;
+            bindings = <&swap_quote &swap_quote &kp LEFT>;
             label = "STR";
         };
 
