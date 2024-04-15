@@ -246,20 +246,20 @@
             layers = <0>;
         };
 
-        const {
-            bindings = <&const>;
+        str {
+            bindings = <&str>;
             key-positions = <6 16>;
             layers = <0>;
         };
 
-        you {
-            bindings = <&you>;
+        bracket_word {
+            bindings = <&bracket_word>;
             key-positions = <7 17>;
             layers = <0>;
         };
 
-        and {
-            bindings = <&and>;
+        var_text {
+            bindings = <&var_text>;
             key-positions = <8 18>;
             layers = <0>;
         };
@@ -333,12 +333,6 @@
             layers = <0>;
         };
 
-        str {
-            bindings = <&str>;
-            key-positions = <16 17 18>;
-            layers = <0>;
-        };
-
         to_media {
             bindings = <&to 4>;
             key-positions = <23 24 25>;
@@ -363,6 +357,12 @@
             bindings = <&sym_or>;
             key-positions = <8 7>;
             layers = <2>;
+        };
+
+        vim_zz {
+            bindings = <&v_save_exit>;
+            key-positions = <2 12>;
+            layers = <0>;
         };
     };
 
@@ -590,6 +590,41 @@
             bindings = <&kp PIPE &kp PIPE>;
             label = "SYM_OR";
         };
+
+        localhost_url: localhost_url {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &kp T &kp T &kp P &kp COLON &kp FSLH &kp FSLH &kp L &kp O &kp C &kp A &kp L &kp H &kp O &kp S &kp T &kp COLON>;
+            label = "LOCALHOST_URL";
+        };
+
+        v_replace: v_replace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp COLON &kp PRCNT &kp S &kp FSLH>;
+            label = "V_REPLACE";
+        };
+
+        var_text: var_text {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DLLR &kp LBRC &kp RBRC &kp LEFT>;
+            label = "VAR_TEXT";
+        };
+
+        v_save_exit: v_save_exit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp LS(Z) &kp LS(Z)>;
+            label = "V_SAVE_EXIT";
+        };
+
+        bracket_word: bracket_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp RIGHT_BRACKET &kp LEFT>;
+            label = "BRACKET_WORD";
+        };
     };
 
     keymap {
@@ -645,10 +680,10 @@
 
         shortcut_layer {
             bindings = <
-&trans  &trans   &md_link      &paren_word   &trans        &trans  &true    &false    &length    &trans
-&trans  &stu_id  &index_i_j_k  &index_0_1_2  &trans        &trans  &export  &default  &fun       &return
-        &trans   &trans        &trans                              &import  &value    &continue
-                               &sk LSHIFT    &caps_word    &trans  &trans
+&trans  &v_replace  &md_link      &paren_word   &trans        &trans  &true    &false    &length    &trans
+&trans  &stu_id     &index_i_j_k  &index_0_1_2  &trans        &trans  &export  &default  &fun       &return
+        &trans      &trans        &trans                              &import  &value    &continue
+                                  &sk LSHIFT    &caps_word    &trans  &trans
             >;
         };
     };
