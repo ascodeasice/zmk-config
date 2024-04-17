@@ -157,7 +157,7 @@ layers:
   - {t: ▽, type: trans}
   shortcut:
   - {t: ▽, type: trans}
-  - '&v_replace'
+  - {t: ▽, type: trans}
   - '&md_link'
   - '&paren_word'
   - {t: ▽, type: trans}
@@ -170,13 +170,13 @@ layers:
   - '&stu_id'
   - '&index_i_j_k'
   - '&index_0_1_2'
-  - {t: ▽, type: trans}
+  - '&code_block'
   - {t: ▽, type: trans}
   - '&export'
   - '&default'
   - '&fun'
   - '&return'
-  - {t: ▽, type: trans}
+  - '&v_replace'
   - '&v_save_exit'
   - '&localhost_url'
   - '&import'
