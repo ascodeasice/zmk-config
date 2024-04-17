@@ -620,6 +620,13 @@
             bindings = <&kp LBKT &kp RIGHT_BRACKET &kp LEFT>;
             label = "BRACKET_WORD";
         };
+
+        code_block: code_block {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp ENTER &kp GRAVE &kp GRAVE &kp GRAVE &kp UP &kp ENTER>;
+            label = "CODE_BLOCK";
+        };
     };
 
     keymap {
@@ -675,10 +682,10 @@
 
         shortcut_layer {
             bindings = <
-&trans  &v_replace  &md_link      &paren_word     &trans        &trans  &true    &false    &length    &trans
-&trans  &stu_id     &index_i_j_k  &index_0_1_2    &trans        &trans  &export  &default  &fun       &return
-        &trans      &v_save_exit  &localhost_url                        &import  &value    &continue
-                                  &sk LSHIFT      &caps_word    &trans  &trans
+&trans  &trans      &md_link      &paren_word     &trans         &trans  &true    &false    &length    &trans
+&trans  &stu_id     &index_i_j_k  &index_0_1_2    &code_block    &trans  &export  &default  &fun       &return
+        &v_replace  &v_save_exit  &localhost_url                         &import  &value    &continue
+                                  &sk LSHIFT      &caps_word     &trans  &trans
             >;
         };
     };
