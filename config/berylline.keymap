@@ -54,34 +54,6 @@
 
 / {
     behaviors {
-        mt: mod_tap_left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MOD_TAP_LEFT";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            bindings = <&kp>, <&kp>;
-
-            hold-trigger-key-positions = <KEYS_R THUMBS>;
-            hold-trigger-on-release;
-            global-quick-tap;
-        };
-
-        mt: mod_tap_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MOD_TAP_RIGHT";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
-            bindings = <&kp>, <&kp>;
-
-            hold-trigger-key-positions = <KEYS_L THUMBS>;
-            hold-trigger-on-release;
-            global-quick-tap;
-        };
-
         f1to3: f1to3 {
             compatible = "zmk,behavior-tap-dance";
             label = "F1TO3";
