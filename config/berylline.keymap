@@ -54,7 +54,7 @@
 
 / {
     behaviors {
-        mtl: mod_tap_left {
+        mt: mod_tap_left {
             compatible = "zmk,behavior-hold-tap";
             label = "MOD_TAP_LEFT";
             #binding-cells = <2>;
@@ -68,7 +68,7 @@
             global-quick-tap;
         };
 
-        mtr: mod_tap_right {
+        mt: mod_tap_right {
             compatible = "zmk,behavior-hold-tap";
             label = "MOD_TAP_RIGHT";
             #binding-cells = <2>;
@@ -665,7 +665,7 @@
             label = "Num";
             bindings = <
 &none         &f1to3        &f4to6          &f7to9              &none        &none   &kp F10        &kp F11        &kp F12       &none
-&mtl LGUI N1  &mtl LALT N2  &mtl LSHFT N3   &mtl LCTRL N4       &kp N5       &kp N6  &mtr LCTRL N7  &mtr LSHFT N8  &mtr LALT N9  &mtr LGUI N0
+&mt LGUI N1  &mt LALT N2  &mt LSHFT N3   &mt LCTRL N4       &kp N5       &kp N6  &mt LCTRL N7  &mt LSHFT N8  &mt LALT N9  &mt LGUI N0
               &none         &mt PAGE_UP UP  &mt PAGE_DOWN DOWN                       &none          &kp COMMA      &kp DOT
                                             &kp SPACE           &kp ENTER    &trans  &trans
             >;
