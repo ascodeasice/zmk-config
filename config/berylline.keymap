@@ -526,7 +526,7 @@
         md_link: md_link {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LPAR &kp RPAR &kp LBKT &kp RIGHT_BRACKET &kp LEFT &kp LEFT &kp LEFT>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LPAR &kp RPAR &kp LEFT &kp LEFT &kp LEFT>;
             label = "MD_LINK";
         };
 
