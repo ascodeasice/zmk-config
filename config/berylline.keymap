@@ -606,7 +606,7 @@
 
         default_layer {
             bindings = <
-&none    &kp W           &kp F             &kp P               &trans             &trans       &kp L               &kp U               &kp Y           &trans
+&none    &kp W           &kp F             &kp P               &kp B              &kp J        &kp L               &kp U               &kp Y           &trans
 &lt 5 A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G              &kp M        &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &mt LSHIFT O
          &mt LCTRL K     &mt LEFT_ALT C    &mt LEFT_WIN D                                      &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
                                            &kp LSHIFT          &lt 2 BACKSPACE    &lt 3 ENTER  &lt 1 SPACE
@@ -636,10 +636,10 @@
         num_layer {
             label = "Num";
             bindings = <
-&none         &f1to3        &f4to6          &f7to9              &none        &none   &kp F10        &kp F11        &kp F12       &none
-&mt LGUI N1  &mt LALT N2  &mt LSHFT N3   &mt LCTRL N4       &kp N5       &kp N6  &mt LCTRL N7  &mt LSHFT N8  &mt LALT N9  &mt LGUI N0
-              &none         &mt PAGE_UP UP  &mt PAGE_DOWN DOWN                       &none          &kp COMMA      &kp DOT
-                                            &kp SPACE           &kp ENTER    &trans  &trans
+&none        &f1to3       &f4to6          &f7to9              &none        &none   &kp F10       &kp F11       &kp F12      &none
+&mt LGUI N1  &mt LALT N2  &mt LSHFT N3    &mt LCTRL N4        &kp N5       &kp N6  &mt LCTRL N7  &mt LSHFT N8  &mt LALT N9  &mt LGUI N0
+             &none        &mt PAGE_UP UP  &mt PAGE_DOWN DOWN                       &none         &kp COMMA     &kp DOT
+                                          &kp SPACE           &kp ENTER    &trans  &trans
             >;
         };
 
