@@ -351,7 +351,7 @@
 
         colon {
             bindings = <&kp COLON>;
-            key-positions = <22 13>;
+            key-positions = <12 21>;
             layers = <0>;
         };
     };
