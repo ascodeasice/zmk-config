@@ -325,6 +325,10 @@ combos:
   l: [default]
 - p: [18, 25]
   k: '!'
+  l: [default]
 - p: [12, 21]
   k: ':'
+  l: [default]
+- p: [11, 20]
+  k: _
   l: [default]
