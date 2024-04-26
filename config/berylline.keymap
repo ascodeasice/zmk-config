@@ -331,6 +331,23 @@
             key-positions = <8 7>;
             layers = <2>;
         };
+
+        line_start {
+            bindings = <&kp CARET>;
+            key-positions = <16 23>;
+            layers = <0>;
+        };
+
+        line_end {
+            bindings = <&kp DOLLAR>;
+            key-positions = <17 24>;
+            layers = <0>;
+        };
+
+        exclamation {
+            bindings = <&kp EXCL>;
+            key-positions = <18 25>;
+        };
     };
 
     macros {
