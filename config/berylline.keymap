@@ -624,7 +624,7 @@
         default_layer {
             bindings = <
 &none    &kp W           &kp F             &kp P               &kp B              &kp J        &kp L               &kp U               &kp Y           &trans
-&lt 5 A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G              &kp M        &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &mt LSHIFT O
+&lt 5 A  &mt LC(LWIN) R  &mt LC(LSHIFT) S  &mt LC(LEFT_ALT) T  &kp G              &kp M        &mt LC(LEFT_ALT) N  &mt LC(LSHIFT) E    &mt LC(LWIN) I  &lt 6 O
          &mt LCTRL K     &mt LEFT_ALT C    &mt LEFT_WIN D                                      &mt LEFT_GUI H      &mt LEFT_ALT COMMA  &mt LCTRL DOT
                                            &kp LSHIFT          &lt 2 BACKSPACE    &lt 3 ENTER  &lt 1 SPACE
             >;
@@ -675,6 +675,15 @@
 &trans  &stu_id     &index_i_j_k  &index_0_1_2    &code_block    &trans  &export  &default  &fun       &return
         &v_replace  &v_save_exit  &localhost_url                         &import  &value    &continue
                                   &sk LSHIFT      &caps_word     &trans  &trans
+            >;
+        };
+
+        function_layer {
+            bindings = <
+&trans          &trans        &trans              &trans         &trans    &trans   &kp F7   &kp F8  &kp F9  &trans
+&kp LEFT_SHIFT  &kp LC(LWIN)  &kp LC(LEFT_SHIFT)  &kp LA(LCTRL)  &trans    &kp F10  &kp F4   &kp F5  &kp F6  &none
+                &kp LCTRL     &kp LEFT_ALT        &kp LWIN                          &kp F1   &kp F2  &kp F3
+                                                  &trans         &trans    &kp F11  &kp F12
             >;
         };
     };
