@@ -400,6 +400,10 @@ path.combo {
 <rect rx="6" ry="6" x="518" y="99" width="28" height="26" class="combo"/>
 <text x="532" y="112" class="combo tap">!</text>
 </g>
+<g class="combo combopos-32">
+<rect rx="6" ry="6" x="182" y="99" width="28" height="26" class="combo"/>
+<text x="196" y="112" class="combo tap">:</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 280)" class="layer-nav">
