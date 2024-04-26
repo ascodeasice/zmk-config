@@ -286,3 +286,11 @@ combos:
 - p: [8, 7]
   k: '&sym_or'
   l: [sym]
+- p: [16, 23]
+  k: ^
+  l: [default]
+- p: [17, 24]
+  k: $
+  l: [default]
+- p: [18, 25]
+  k: '!'
