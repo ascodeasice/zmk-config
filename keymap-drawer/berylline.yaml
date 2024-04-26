@@ -95,14 +95,14 @@ layers:
   - {t: SPACE, h: LEFT SHIFT}
   num:
   - ''
-  - '&f1to3'
-  - '&f4to6'
-  - '&f7to9'
+  - '*'
+  - '-'
+  - +
   - ''
   - ''
-  - F10
-  - F11
-  - F12
+  - '='
+  - /
+  - {t: ▽, type: trans}
   - ''
   - {t: '1', h: LGUI}
   - {t: '2', h: LALT}
@@ -114,10 +114,10 @@ layers:
   - {t: '8', h: LSHFT}
   - {t: '9', h: LALT}
   - {t: '0', h: LGUI}
-  - ''
+  - ':'
   - {t: UP, h: PAGE UP}
   - {t: DOWN, h: PAGE DOWN}
-  - ''
+  - BACKSPACE
   - ','
   - .
   - SPACE
