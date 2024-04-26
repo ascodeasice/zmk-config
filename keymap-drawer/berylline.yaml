@@ -20,7 +20,7 @@ layers:
   - {t: N, h: Ctl+ LEFT ALT}
   - {t: E, h: Ctl+ LSHIFT}
   - {t: I, h: Ctl+ LWIN}
-  - {t: O, h: LSHIFT}
+  - {t: O, h: function}
   - {t: K, h: LCTRL}
   - {t: C, h: LEFT ALT}
   - {t: D, h: LEFT WIN}
@@ -186,6 +186,37 @@ layers:
   - '&caps_word'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  function:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F7
+  - F8
+  - F9
+  - {t: ▽, type: trans}
+  - LEFT SHIFT
+  - Ctl+ LWIN
+  - Ctl+ LEFT SHIFT
+  - Alt+ LCTRL
+  - {t: ▽, type: trans}
+  - F10
+  - F4
+  - F5
+  - F6
+  - {type: held}
+  - LCTRL
+  - LEFT ALT
+  - LWIN
+  - F1
+  - F2
+  - F3
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F11
+  - F12
 combos:
 - p: [2, 3]
   k: V
