@@ -347,11 +347,18 @@
         exclamation {
             bindings = <&kp EXCL>;
             key-positions = <18 25>;
+            layers = <0>;
         };
 
         colon {
             bindings = <&kp COLON>;
             key-positions = <12 21>;
+            layers = <0>;
+        };
+
+        underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <11 20>;
             layers = <0>;
         };
     };
