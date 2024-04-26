@@ -348,6 +348,12 @@
             bindings = <&kp EXCL>;
             key-positions = <18 25>;
         };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <22 13>;
+            layers = <0>;
+        };
     };
 
     macros {
