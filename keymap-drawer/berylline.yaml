@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: berylline}
 layers:
   default:
-  - ''
+  - Ctl+ SPACE
   - W
   - F
   - {t: P, h: Gui+ LSHIFT}
