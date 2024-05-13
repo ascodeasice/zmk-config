@@ -629,6 +629,13 @@
             bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp ENTER &kp GRAVE &kp GRAVE &kp GRAVE &kp UP &kp ENTER>;
             label = "CODE_BLOCK";
         };
+
+        sql_select_all: sql_select_all {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(S) &kp LS(E) &kp LS(L) &kp LS(E) &kp LS(C) &kp LS(T) &kp SPACE &kp STAR &kp SPACE &kp LS(F) &kp LS(R) &kp LS(O) &kp LS(M) &kp SPACE>;
+            label = "SQL_SELECT_ALL";
+        };
     };
 
     keymap {
@@ -684,9 +691,9 @@
 
         shortcut_layer {
             bindings = <
-&trans  &trans      &md_link      &paren_word     &trans         &trans  &true    &false    &length    &trans
-&trans  &stu_id     &index_i_j_k  &index_0_1_2    &code_block    &trans  &export  &default  &fun       &return
-        &v_replace  &v_save_exit  &localhost_url                         &import  &value    &continue
+&trans  &trans      &md_link      &paren_word     &trans         &trans  &sql_select_all  &false    &length    &trans
+&trans  &stu_id     &index_i_j_k  &index_0_1_2    &code_block    &trans  &export          &default  &fun       &return
+        &v_replace  &v_save_exit  &localhost_url                         &import          &value    &continue
                                   &sk LSHIFT      &caps_word     &trans  &trans
             >;
         };
