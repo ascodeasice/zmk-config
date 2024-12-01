@@ -205,8 +205,8 @@
             layers = <0>;
         };
 
-        swap_quote {
-            bindings = <&swap_quote>;
+        quote {
+            bindings = <&kp SINGLE_QUOTE>;
             key-positions = <17 18>;
             layers = <0>;
             timeout-ms = <25>;
