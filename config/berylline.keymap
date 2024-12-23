@@ -40,6 +40,9 @@
 #define TD_TAPPING_TERM 325
 #define QUICK_TAP_TERM 175
 
+/*enable mouse emulatioenable mouse emulationn*/
+CONFIG_ZMK_POINTING=y
+
 /* Behavior Settings */
 
 &sk {
