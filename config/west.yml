@@ -8,8 +8,8 @@ manifest:
       url-base: https://github.com/ascodeasice
   projects:
     - name: zmk
-      remote: ascodeasice
-      revision: feat/pointers-move-scroll
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
