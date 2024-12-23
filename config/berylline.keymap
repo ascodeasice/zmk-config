@@ -4,10 +4,13 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 /* Layers */
 
@@ -660,7 +663,7 @@
         nav_layer {
             label = "Nav";
             bindings = <
-&none       &kp LA(F4)               &mmv MOVE_UP     &kp LA(TAB)               &none        &none      &kp K_CONTEXT_MENU  &mt PAGE_UP UP      &trans         &none
+&none       &kp LA(F4)               &mmv MOVE_UP     &kp LA(TAB)               &none        &none      &kp K_CONTEXT_MENU  &mt PAGE_UP UP      &kp DELETE     &none
 &kp ESCAPE  &mmv MOVE_LEFT           &mmv MOVE_DOWN   &mmv MOVE_RIGHT           &trans       &kp ENTER  &mt HOME LEFT       &mt PAGE_DOWN DOWN  &mt END RIGHT  &msc SCRL_RIGHT
             &mt LEFT_CONTROL DELETE  &mt LC(V) LC(C)  &mt PRINTSCREEN CAPSLOCK                          &msc SCRL_LEFT      &msc SCRL_DOWN      &msc SCRL_UP
                                                       &mkp LCLK                 &mkp RCLK    &to 0      &kp ENTER
@@ -680,7 +683,7 @@
         num_layer {
             label = "Num";
             bindings = <
-&none        &kp ASTRK    &kp MINUS       &kp PLUS            &none        &none   &kp EQUAL      &kp SLASH     &trans       &none
+&none        &kp ASTRK    &kp MINUS       &kp PLUS            &none        &none   &kp COLON      &kp SLASH     &trans       &none
 &mt LGUI N1  &mt LALT N2  &mt LSHFT N3    &mt LCTRL N4        &kp N5       &kp N6  &mt LCTRL N7   &mt LSHFT N8  &mt LALT N9  &mt LGUI N0
              &kp COLON    &mt PAGE_UP UP  &mt PAGE_DOWN DOWN                       &kp BACKSPACE  &kp COMMA     &kp DOT
                                           &kp SPACE           &kp ENTER    &trans  &trans
