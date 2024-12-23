@@ -40,7 +40,7 @@ layers:
   - ''
   - CONTEXT MENU
   - {t: UP, h: PAGE UP}
-  - {t: ▽, type: trans}
+  - DELETE
   - ''
   - ESCAPE
   - '&mmv MOVE_LEFT'
@@ -100,7 +100,7 @@ layers:
   - +
   - ''
   - ''
-  - '='
+  - ':'
   - /
   - {t: ▽, type: trans}
   - ''
