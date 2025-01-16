@@ -217,6 +217,37 @@ layers:
   - {t: ▽, type: trans}
   - F11
   - F12
+  steno:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - A
+  - S
+  - D
+  - F
+  - G
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - C
+  - V
+  - N
+  - M
 combos:
 - p: [2, 3]
   k: V
@@ -332,3 +363,6 @@ combos:
 - p: [11, 20]
   k: _
   l: [default]
+- p: [1, 2, 3]
+  k: {t: steno, h: toggle}
+  l: [default, steno]
