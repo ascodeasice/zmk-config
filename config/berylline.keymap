@@ -222,7 +222,7 @@
 
         to_nav {
             bindings = <&to 1>;
-            key-positions = <20 21 22>;
+            key-positions = <24 25 23>;
             layers = <0>;
         };
 
@@ -314,12 +314,6 @@
             layers = <0>;
         };
 
-        to_media {
-            bindings = <&to 4>;
-            key-positions = <23 24 25>;
-            layers = <0>;
-        };
-
         delete {
             bindings = <&kp DELETE>;
             key-positions = <11 10>;
@@ -372,7 +366,7 @@
 
         steno_toggle {
             bindings = <&tog 7>;
-            key-positions = <1 2 3>;
+            key-positions = <21 20 22>;
             layers = <0 7>;
         };
     };
