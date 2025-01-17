@@ -291,7 +291,7 @@ combos:
 - p: [17, 18]
   k: ''''
   l: [default]
-- p: [20, 21, 22]
+- p: [24, 25, 23]
   k: {t: Nav, h: toggle}
   l: [default]
 - p: [6, 16]
@@ -336,9 +336,6 @@ combos:
 - p: [1, 11]
   k: '&last_dir'
   l: [default]
-- p: [23, 24, 25]
-  k: {t: MEDIA_LAYER, h: toggle}
-  l: [default]
 - p: [11, 10]
   k: DELETE
   l: [default]
@@ -363,6 +360,6 @@ combos:
 - p: [11, 20]
   k: _
   l: [default]
-- p: [1, 2, 3]
+- p: [21, 20, 22]
   k: {t: steno, h: toggle}
   l: [default, steno]
