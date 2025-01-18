@@ -132,7 +132,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PREV
-  - PLAY PAUSE
+  - PP
   - NEXT
   - {t: ▽, type: trans}
   - {t: BT, h: '0'}
@@ -141,8 +141,8 @@ layers:
   - {t: BT, h: '3'}
   - {t: BT, h: '4', type: held}
   - MUTE
-  - VOLUME DOWN
-  - VOLUME UP
+  - VOL DN
+  - VOL UP
   - BRI DEC
   - BRI INC
   - {t: ▽, type: trans}
