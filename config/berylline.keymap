@@ -180,31 +180,10 @@
             timeout-ms = <25>;
         };
 
-        b {
-            bindings = <&kp B>;
-            key-positions = <12 13>;
-            layers = <0>;
-            timeout-ms = <30>;
-        };
-
-        j {
-            bindings = <&kp J>;
-            key-positions = <6 7>;
-            layers = <0>;
-            timeout-ms = <30>;
-        };
-
         slash {
             bindings = <&kp SLASH>;
             key-positions = <24 25>;
             layers = <0>;
-        };
-
-        semicolon {
-            bindings = <&kp SEMI>;
-            key-positions = <16 18>;
-            layers = <0>;
-            timeout-ms = <17>;
         };
 
         minus {
@@ -283,13 +262,6 @@
             layers = <0>;
         };
 
-        s_nq {
-            bindings = <&s_neq>;
-            key-positions = <8 6>;
-            layers = <0>;
-            timeout-ms = <30>;
-        };
-
         less {
             bindings = <&less>;
             key-positions = <1 2>;
@@ -321,19 +293,6 @@
             timeout-ms = <30>;
         };
 
-        close_program {
-            bindings = <&kp LA(F4)>;
-            key-positions = <14 13>;
-            timeout-ms = <30>;
-            layers = <0>;
-        };
-
-        sym_or {
-            bindings = <&sym_or>;
-            key-positions = <8 7>;
-            layers = <2>;
-        };
-
         line_start {
             bindings = <&kp CARET>;
             key-positions = <16 23>;
@@ -349,18 +308,6 @@
         exclamation {
             bindings = <&kp EXCL>;
             key-positions = <18 25>;
-            layers = <0>;
-        };
-
-        colon {
-            bindings = <&kp COLON>;
-            key-positions = <12 21>;
-            layers = <0>;
-        };
-
-        underscore {
-            bindings = <&kp UNDER>;
-            key-positions = <11 20>;
             layers = <0>;
         };
 
