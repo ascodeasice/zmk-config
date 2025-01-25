@@ -273,17 +273,8 @@ combos:
 - p: [22, 21]
   k: '1'
   l: [default, Sym]
-- p: [12, 13]
-  k: B
-  l: [default]
-- p: [6, 7]
-  k: J
-  l: [default]
 - p: [24, 25]
   k: /
-  l: [default]
-- p: [16, 18]
-  k: ;
   l: [default]
 - p: [23, 24]
   k: '-'
@@ -321,9 +312,6 @@ combos:
 - p: [25, 23]
   k: '*'
   l: [default]
-- p: [8, 6]
-  k: '&s_neq'
-  l: [default]
 - p: [1, 2]
   k: '&less'
   l: [Sym]
@@ -339,12 +327,6 @@ combos:
 - p: [11, 10]
   k: DELETE
   l: [default]
-- p: [14, 13]
-  k: Alt+F4
-  l: [default]
-- p: [8, 7]
-  k: '&sym_or'
-  l: [Sym]
 - p: [16, 23]
   k: ^
   l: [default]
@@ -353,12 +335,6 @@ combos:
   l: [default]
 - p: [18, 25]
   k: '!'
-  l: [default]
-- p: [12, 21]
-  k: ':'
-  l: [default]
-- p: [11, 20]
-  k: _
   l: [default]
 - p: [21, 20, 22]
   k: {t: steno, h: toggle}
