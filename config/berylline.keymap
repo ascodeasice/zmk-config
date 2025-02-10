@@ -610,7 +610,7 @@
                 <&kp E &kp R &kp F &kp V &kp O &kp L>,
                 <&macro_release>,
                 <&kp E &kp R &kp F &kp V &kp O &kp L>,
-                <&macro_wait_time 10>,
+                <&macro_tap>,
                 <&tog 7>;
         };
     };
