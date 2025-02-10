@@ -16,7 +16,7 @@ layers:
   - {t: S, h: Ctl+LSHIFT}
   - {t: T, h: Ctl+LEFT ALT}
   - {t: G, h: MEDIA_LAYER}
-  - M
+  - {t: M, s: ENTER}
   - {t: N, h: Ctl+LEFT ALT}
   - {t: E, h: Ctl+LSHIFT}
   - {t: I, h: Ctl+LWIN}
