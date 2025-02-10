@@ -605,8 +605,14 @@
             compatible = "zmk,behavior-macro";
             label = "PLOVER";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp E &kp R &kp F &kp V &kp O &kp L>, <&macro_release &kp E &kp R &kp F &kp V &kp O &kp L>, <&tog 7>;
-          };
+            bindings =
+                <&macro_press>,
+                <&kp E &kp R &kp F &kp V &kp O &kp L>,
+                <&macro_release>,
+                <&kp E &kp R &kp F &kp V &kp O &kp L>,
+                <&macro_wait_time 10>,
+                <&tog 7>;
+        };
     };
 
     keymap {
