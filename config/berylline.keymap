@@ -112,6 +112,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        ctrl_m_to_enter: ctrl_m_to_enter {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CTRL_M_TO_ENTER";
+            bindings = <&kp M>, <&kp ENTER>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
