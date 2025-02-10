@@ -394,9 +394,7 @@ path.combo {
 <path d="M140,140 l-37,0" class="combo"/>
 <path d="M140,140 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="126" y="127" width="28" height="26" class="combo"/>
-<a href="#steno">
-<text x="140" y="140" class="combo tap layer-activator">steno</text>
-</a><text x="140" y="151" class="combo hold">toggle</text>
+<text x="140" y="140" class="combo tap"><tspan style="font-size: 64%">&amp;plover_to…</tspan></text>
 </g>
 </g>
 </g>
@@ -1358,9 +1356,7 @@ path.combo {
 <path d="M140,140 l-37,0" class="combo"/>
 <path d="M140,140 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="126" y="127" width="28" height="26" class="combo"/>
-<a href="#steno">
-<text x="140" y="140" class="combo tap layer-activator">steno</text>
-</a><text x="140" y="151" class="combo hold">toggle</text>
+<text x="140" y="140" class="combo tap"><tspan style="font-size: 64%">&amp;plover_to…</tspan></text>
 </g>
 </g>
 </g>
