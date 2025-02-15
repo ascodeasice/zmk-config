@@ -324,9 +324,6 @@ combos:
 - p: [1, 11]
   k: '&last_dir'
   l: [default]
-- p: [11, 10]
-  k: DELETE
-  l: [default]
 - p: [16, 23]
   k: ^
   l: [default]
