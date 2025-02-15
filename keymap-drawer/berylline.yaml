@@ -33,7 +33,7 @@ layers:
   - {t: SPACE, h: Nav}
   Nav:
   - ''
-  - Alt+F4
+  - {t: ▽, type: trans}
   - '&mmv MOVE_UP'
   - Alt+TAB
   - ''
@@ -73,9 +73,9 @@ layers:
   - '}'
   - \
   - ''
-  - '!'
+  - '~'
   - '`'
-  - ;
+  - '#'
   - '='
   - '%'
   - BACKSPACE
