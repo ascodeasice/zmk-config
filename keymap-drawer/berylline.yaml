@@ -285,12 +285,6 @@ combos:
 - p: [24, 25, 23]
   k: {t: Nav, h: toggle}
   l: [default]
-- p: [6, 16]
-  k: '&str'
-  l: [default]
-- p: [7, 17]
-  k: '&bracket_word'
-  l: [default]
 - p: [8, 18]
   k: '&var_text'
   l: [default]
