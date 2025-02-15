@@ -336,3 +336,9 @@ combos:
 - p: [21, 20, 22]
   k: '&plover_toggle'
   l: [default, steno]
+- p: [16, 6]
+  k: (
+  l: [default]
+- p: [7, 17]
+  k: )
+  l: [default]

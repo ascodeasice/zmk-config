@@ -393,6 +393,14 @@ path.combo {
 <rect rx="6" ry="6" x="126" y="127" width="28" height="26" class="combo"/>
 <text x="140" y="140" class="combo tap"><tspan style="font-size: 64%">&amp;plover_to…</tspan></text>
 </g>
+<g class="combo combopos-26">
+<rect rx="6" ry="6" x="406" y="43" width="28" height="26" class="combo"/>
+<text x="420" y="56" class="combo tap">(</text>
+</g>
+<g class="combo combopos-27">
+<rect rx="6" ry="6" x="462" y="43" width="28" height="26" class="combo"/>
+<text x="476" y="56" class="combo tap">)</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 280)" class="layer-Nav">
