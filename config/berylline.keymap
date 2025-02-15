@@ -639,7 +639,7 @@
         nav_layer {
             label = "Nav";
             bindings = <
-&none       &kp LA(F4)               &mmv MOVE_UP     &kp LA(TAB)               &none        &none      &kp K_CONTEXT_MENU  &mt PAGE_UP UP      &kp DELETE     &none
+&none       &trans                   &mmv MOVE_UP     &kp LA(TAB)               &none        &none      &kp K_CONTEXT_MENU  &mt PAGE_UP UP      &kp DELETE     &none
 &kp ESCAPE  &mmv MOVE_LEFT           &mmv MOVE_DOWN   &mmv MOVE_RIGHT           &trans       &kp ENTER  &mt HOME LEFT       &mt PAGE_DOWN DOWN  &mt END RIGHT  &msc SCRL_RIGHT
             &mt LEFT_CONTROL DELETE  &mt LC(V) LC(C)  &mt PRINTSCREEN CAPSLOCK                          &msc SCRL_LEFT      &msc SCRL_DOWN      &msc SCRL_UP
                                                       &mkp LCLK                 &mkp RCLK    &to 0      &kp ENTER
@@ -649,10 +649,10 @@
         sym_layer {
             label = "Sym";
             bindings = <
-&trans    &kp ASTRK  &kp COMMA  &kp DOT     &none          &none          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &none
-&kp EXCL  &kp GRAVE  &kp SEMI   &kp EQUAL   &kp PERCENT    &kp BACKSPACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp PIPE
-          &kp AT     &kp HASH   &kp DOLLAR                                &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET
-                                &trans      &trans         &kp ENTER      &mt LEFT_SHIFT SPACE
+&trans     &kp ASTRK  &kp COMMA  &kp DOT     &none          &none          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &none
+&kp TILDE  &kp GRAVE  &kp HASH   &kp EQUAL   &kp PERCENT    &kp BACKSPACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp PIPE
+           &kp AT     &kp HASH   &kp DOLLAR                                &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp CARET
+                                 &trans      &trans         &kp ENTER      &mt LEFT_SHIFT SPACE
             >;
         };
 
