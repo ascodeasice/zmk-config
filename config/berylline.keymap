@@ -214,18 +214,6 @@
             layers = <0>;
         };
 
-        str {
-            bindings = <&str>;
-            key-positions = <6 16>;
-            layers = <0>;
-        };
-
-        bracket_word {
-            bindings = <&bracket_word>;
-            key-positions = <7 17>;
-            layers = <0>;
-        };
-
         var_text {
             bindings = <&var_text>;
             key-positions = <8 18>;
