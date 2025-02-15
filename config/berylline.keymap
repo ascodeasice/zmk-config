@@ -318,6 +318,18 @@
             key-positions = <21 20 22>;
             layers = <0 7>;
         };
+
+        l_pren {
+            bindings = <&kp LPAR>;
+            key-positions = <16 6>;
+            layers = <0>;
+        };
+
+        r_paren {
+            bindings = <&kp RPAR>;
+            key-positions = <7 17>;
+            layers = <0>;
+        };
     };
 
     macros {
