@@ -295,13 +295,6 @@
             layers = <0>;
         };
 
-        delete {
-            bindings = <&kp DELETE>;
-            key-positions = <11 10>;
-            layers = <0>;
-            timeout-ms = <30>;
-        };
-
         line_start {
             bindings = <&kp CARET>;
             key-positions = <16 23>;
