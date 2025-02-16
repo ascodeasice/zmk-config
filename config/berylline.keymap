@@ -688,10 +688,10 @@
 
         layer_steno {
             bindings = <
-&kp Q  &kp W   &kp E   &kp R   &kp T    &kp U  &kp I   &kp O   &kp P     &kp LBKT
-&kp A  &kp S   &kp D   &kp F   &kp G    &kp J  &kp K   &kp L   &kp SEMI  &kp APOS
-       &trans  &trans  &trans                  &trans  &trans  &trans
-                       &kp C   &kp V    &kp N  &kp M
+&kp Q  &kp W   &kp E   &kp R   &kp T      &kp U  &kp I    &kp O   &kp P     &kp LBKT
+&kp A  &kp S   &kp D   &kp F   &kp G      &kp J  &kp K    &kp L   &kp SEMI  &kp APOS
+       &trans  &trans  &trans                    &trans   &trans  &trans
+                       &kp C   &lt 2 V    &kp N  &lt 1 M
             >;
         };
     };
