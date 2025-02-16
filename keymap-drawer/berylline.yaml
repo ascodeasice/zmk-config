@@ -31,6 +31,37 @@ layers:
   - {t: BACKSPACE, h: Sym}
   - {t: ENTER, h: Num}
   - {t: SPACE, h: Nav}
+  steno:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - A
+  - S
+  - D
+  - F
+  - G
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - C
+  - {t: V, h: Sym}
+  - N
+  - {t: M, h: Nav}
   Nav:
   - ''
   - {t: ▽, type: trans}
@@ -217,37 +248,6 @@ layers:
   - {t: ▽, type: trans}
   - F11
   - F12
-  steno:
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - U
-  - I
-  - O
-  - P
-  - '['
-  - A
-  - S
-  - D
-  - F
-  - G
-  - J
-  - K
-  - L
-  - ;
-  - ''''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - C
-  - {t: V, h: Sym}
-  - N
-  - {t: M, h: Nav}
 combos:
 - p: [2, 3]
   k: V
