@@ -53,15 +53,15 @@ layers:
   - ;
   - ''''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Sym
+  - Nav
+  - Nav
+  - Sym
   - {t: ▽, type: trans}
   - C
-  - {t: V, h: Sym}
+  - V
   - N
-  - {t: M, h: Nav}
+  - M
   Nav:
   - ''
   - {t: ▽, type: trans}
