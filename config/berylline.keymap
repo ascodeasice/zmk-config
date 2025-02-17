@@ -160,7 +160,7 @@
         esc {
             bindings = <&kp ESC>;
             key-positions = <11 13>;
-            layers = <0>;
+            layers = <0 2>;
         };
 
         tab {
