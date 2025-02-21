@@ -161,6 +161,7 @@
             bindings = <&kp ESC>;
             key-positions = <11 13>;
             layers = <0 2>;
+            timeout-ms = <20>;
         };
 
         tab {
@@ -186,7 +187,7 @@
             bindings = <&kp N1>;
             key-positions = <22 21>;
             layers = <0 3>;
-            timeout-ms = <25>;
+            timeout-ms = <20>;
         };
 
         slash {
