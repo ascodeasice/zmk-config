@@ -161,7 +161,7 @@
             bindings = <&kp ESC>;
             key-positions = <11 13>;
             layers = <0 2>;
-            timeout-ms = <20>;
+            timeout-ms = <25>;
         };
 
         tab {
