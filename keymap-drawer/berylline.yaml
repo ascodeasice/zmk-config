@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: berylline}
+layout: {zmk_keyboard: berylline}
 layers:
   default:
   - Ctl+SPACE
@@ -295,7 +295,7 @@ combos:
   k: '='
   l: [default]
 - p: [3, 13]
-  k: '&key'
+  k: ']'
   l: [default]
 - p: [7, 8]
   k: '&language_switch'
@@ -335,4 +335,7 @@ combos:
   l: [default]
 - p: [7, 17]
   k: )
+  l: [default]
+- p: [2, 12]
+  k: '['
   l: [default]
