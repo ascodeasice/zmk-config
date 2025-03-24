@@ -647,7 +647,7 @@
             label = "Nav";
             bindings = <
 &none       &trans                   &mmv MOVE_UP     &kp LA(TAB)               &none        &none      &kp K_CONTEXT_MENU  &mt PAGE_UP UP      &kp DELETE     &none
-&kp ESCAPE  &mmv MOVE_LEFT           &mmv MOVE_DOWN   &mmv MOVE_RIGHT           &trans       &kp ENTER  &mt HOME LEFT       &mt PAGE_DOWN DOWN  &mt END RIGHT  &msc SCRL_RIGHT
+&kp ESCAPE  &mmv MOVE_LEFT           &mmv MOVE_DOWN   &mmv MOVE_RIGHT           &mkp MCLK    &kp ENTER  &mt HOME LEFT       &mt PAGE_DOWN DOWN  &mt END RIGHT  &msc SCRL_RIGHT
             &mt LEFT_CONTROL DELETE  &mt LC(V) LC(C)  &mt PRINTSCREEN CAPSLOCK                          &msc SCRL_LEFT      &msc SCRL_DOWN      &msc SCRL_UP
                                                       &mkp LCLK                 &mkp RCLK    &to 0      &kp ENTER
             >;
