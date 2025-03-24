@@ -77,7 +77,7 @@ layers:
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_RIGHT'
-  - {t: ▽, type: trans}
+  - '&mkp MCLK'
   - ENTER
   - {t: LEFT, h: HOME}
   - {t: DOWN, h: PAGE DOWN}
