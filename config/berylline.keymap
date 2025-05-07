@@ -233,8 +233,8 @@
             timeout-ms = <25>;
         };
 
-        r_bracket {
-            bindings = <&kp RIGHT_BRACKET>;
+        tmux_prefix {
+            bindings = <&kp LC(SPACE)>;
             key-positions = <3 13>;
             layers = <0>;
         };
