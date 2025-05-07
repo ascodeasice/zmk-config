@@ -295,7 +295,7 @@ combos:
   k: '='
   l: [default]
 - p: [3, 13]
-  k: ']'
+  k: Ctl+SPACE
   l: [default]
 - p: [7, 8]
   k: '&language_switch'
