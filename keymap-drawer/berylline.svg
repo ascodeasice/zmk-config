@@ -1185,15 +1185,15 @@ path.combo {
 </g>
 <g transform="translate(420, 84)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&amp;export</text>
+<text x="0" y="0" class="key tap">&amp;tomato</text>
 </g>
 <g transform="translate(476, 84)" class="key keypos-17">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 88%">&amp;default</tspan></text>
+<text x="0" y="0" class="key tap">&amp;banana</text>
 </g>
 <g transform="translate(532, 84)" class="key keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&amp;fun</text>
+<text x="0" y="0" class="key tap">&amp;pepper</text>
 </g>
 <g transform="translate(588, 84)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

@@ -203,9 +203,9 @@ layers:
   - '&index_0_1_2'
   - '&code_block'
   - {t: ▽, type: trans}
-  - '&export'
-  - '&default'
-  - '&fun'
+  - '&tomato'
+  - '&banana'
+  - '&pepper'
   - '&return'
   - '&v_replace'
   - '&v_save_exit'
