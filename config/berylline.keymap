@@ -620,6 +620,27 @@
                 <&macro_tap>,
                 <&tog 1>;
         };
+
+        tomato: tomato {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U)) &kp N1 &kp F &kp N3 &kp N4 &kp N5 &kp ENTER>;
+            label = "TOMATO";
+        };
+
+        banana: banana {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U)) &kp N1 &kp F &kp N3 &kp N4 &kp C &kp ENTER>;
+            label = "BANANA";
+        };
+
+        pepper: pepper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(U)) &kp N1 &kp F &kp A &kp D &kp NUMBER_1 &kp ENTER>;
+            label = "PEPPER";
+        };
     };
 
     keymap {
@@ -684,9 +705,9 @@
 
         shortcut_layer {
             bindings = <
-&trans  &trans      &md_link      &paren_word     &trans         &trans  &sql_select_all  &false    &length    &trans
-&trans  &stu_id     &index_i_j_k  &index_0_1_2    &code_block    &trans  &export          &default  &fun       &return
-        &v_replace  &v_save_exit  &localhost_url                         &import          &value    &continue
+&trans  &trans      &md_link      &paren_word     &trans         &trans  &sql_select_all  &false   &length    &trans
+&trans  &stu_id     &index_i_j_k  &index_0_1_2    &code_block    &trans  &tomato          &banana  &pepper    &return
+        &v_replace  &v_save_exit  &localhost_url                         &import          &value   &continue
                                   &sk LSHIFT      &caps_word     &trans  &trans
             >;
         };
