@@ -205,8 +205,8 @@ layers:
   - {t: ▽, type: trans}
   - '&tomato'
   - '&banana'
+  - '&blueberry'
   - '&pepper'
-  - '&return'
   - '&v_replace'
   - '&v_save_exit'
   - '&localhost_url'
