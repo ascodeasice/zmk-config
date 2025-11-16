@@ -194,7 +194,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&sql_select_all'
-  - '&false'
+  - '&pepper'
   - '&length'
   - {t: ▽, type: trans}
   - {type: held}
@@ -206,7 +206,7 @@ layers:
   - '&tomato'
   - '&banana'
   - '&blueberry'
-  - '&pepper'
+  - '&return'
   - '&v_replace'
   - '&v_save_exit'
   - '&localhost_url'
