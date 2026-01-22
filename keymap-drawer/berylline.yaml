@@ -313,7 +313,7 @@ combos:
   k: '&gt'
   l: [Sym]
 - p: [11, 12]
-  k: '&arrow'
+  k: '&equal_arrow'
   l: [Sym]
 - p: [1, 11]
   k: '&last_dir'
@@ -338,4 +338,7 @@ combos:
   l: [default]
 - p: [2, 12]
   k: '['
+  l: [default]
+- p: [6, 7]
+  k: '&arrow'
   l: [default]
