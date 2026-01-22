@@ -270,8 +270,8 @@
             layers = <3>;
         };
 
-        arrow {
-            bindings = <&arrow>;
+        equal_arrow {
+            bindings = <&equal_arrow>;
             key-positions = <11 12>;
             layers = <3>;
         };
@@ -321,6 +321,12 @@
         l_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <2 12>;
+            layers = <0>;
+        };
+
+        arrow {
+            bindings = <&arrow>;
+            key-positions = <6 7>;
             layers = <0>;
         };
     };
@@ -403,11 +409,11 @@
             label = "GT";
         };
 
-        arrow: arrow {
+        equal_arrow: equal_arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp EQUAL &kp GT>;
-            label = "ARROW";
+            label = "EQUAL_ARROW";
         };
 
         s_eq: s_eq {
@@ -647,6 +653,13 @@
             #binding-cells = <0>;
             bindings = <&kp LC(LS(U)) &kp N1 &kp F &kp A &kp D &kp NUMBER_0 &kp ENTER>;
             label = "BLUEBERRY";
+        };
+
+        arrow: arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GT>;
+            label = "ARROW";
         };
     };
 
