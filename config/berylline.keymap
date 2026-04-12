@@ -661,6 +661,13 @@
             bindings = <&kp MINUS &kp GT>;
             label = "ARROW";
         };
+
+        line: line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp MINUS &kp MINUS &kp RET>;
+            label = "LINE";
+        };
     };
 
     keymap {
@@ -725,7 +732,7 @@
 
         shortcut_layer {
             bindings = <
-&trans  &trans      &md_link      &paren_word     &trans         &trans  &sql_select_all  &pepper  &length     &trans
+&trans  &trans      &md_link      &paren_word     &trans         &trans  &sql_select_all  &pepper  &line       &trans
 &trans  &stu_id     &index_i_j_k  &index_0_1_2    &code_block    &trans  &tomato          &banana  &blueberry  &return
         &v_replace  &v_save_exit  &localhost_url                         &import          &value   &continue
                                   &sk LSHIFT      &caps_word     &trans  &trans
